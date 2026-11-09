@@ -64,6 +64,15 @@
  #gear,#rates{background:transparent}
  h2{font-family:var(--disp);font-weight:500;font-size:clamp(2rem,4vw,2.75rem);line-height:1.05;letter-spacing:-.02em}
  .sub{color:var(--slate);margin-top:10px}
+ .acc>summary{list-style:none;cursor:pointer;display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
+ .acc>summary::-webkit-details-marker{display:none}
+ .acc>summary>div{min-width:0}
+ .acc-tog{flex:none;margin-top:6px;border:1px solid var(--ink);background:#fff;border-radius:960px;padding:9px 18px;font-size:14px;font-weight:700;letter-spacing:-.04em;box-shadow:var(--shadow)}
+ .acc-tog::after{content:"Show"}
+ .acc[open]>summary .acc-tog::after{content:"Hide"}
+ .acc>summary:hover .acc-tog{opacity:.85}
+ .acc-body{margin-top:24px}
+ @media(max-width:600px){.acc>summary{flex-direction:column;gap:12px}.acc-tog{margin-top:0;align-self:flex-start}}
 
  .filters{position:sticky;top:56px;z-index:40;background:rgba(245,238,255,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:14px 0;margin-top:24px}
  .frow{display:inline-flex;flex-wrap:wrap;gap:4px;background:var(--chip);border-radius:960px;padding:4px}
@@ -264,18 +273,18 @@
 <section id="when">
  <div class="wrap">
   <h2>When Mark's free</h2>
-  <p class="sub">Through December. Mondays are taken, Tuesday through Friday are open.</p>
+  <p class="sub">Through December. Mondays are taken, Tuesday through Friday are open. PBD classes on Tuesday, Thursday and Saturday each leave a 30-minute slot afterward that we can practice in.</p>
   <div class="when">
    <div class="days">
     <div class="day t"><b><i class="k-t"></i>Mon</b><div><strong>Taken</strong><span>Mark practices combos with someone from the team.</span></div></div>
-    <div class="day"><b><i class="k-op"></i>Tue</b><div><strong>Open</strong><span>Except 11/24, Mark has a private lesson at 8 PM.</span></div></div>
+    <div class="day"><b><i class="k-op"></i>Tue</b><div><strong>Open</strong><span>Except 11/24, when Mark teaches the PBD Beginner class at 8 PM. Any Tuesday, there's 30 minutes after the PBD class to practice.</span></div></div>
     <div class="day"><b><i class="k-w"></i>Wed</b><div><strong>Open after salsa ends at 9 PM</strong><span>We'll already be at the PBD studio, so we stay and practice there.</span></div></div>
-    <div class="day"><b><i class="k-op"></i>Thu</b><div><strong>Open</strong></div></div>
+    <div class="day"><b><i class="k-op"></i>Thu</b><div><strong>Open</strong><span>There's 30 minutes after the PBD class to practice.</span></div></div>
     <div class="day"><b><i class="k-f"></i>Fri</b><div><strong>Open before 5:30 or after 6:30 PM</strong><span>Mark has a private lesson in between.</span></div></div>
-    <div class="day"><b><i class="k-o"></i>Sat 11/14</b><div><strong>Private lesson, 1 to 2:30 PM</strong></div></div>
+    <div class="day"><b><i class="k-o"></i>Sat 11/14</b><div><strong>Mark teaches the PBD Beginner class, 1 to 2:30 PM</strong><span>Saturday PBD classes also leave 30 minutes after to practice.</span></div></div>
    </div>
    <div class="calblock">
-    <div class="cal-legend"><span><i class="k-t"></i>Taken</span><span><i class="k-op"></i>Open</span><span><i class="k-w"></i>After salsa, at PBD</span><span><i class="k-f"></i>Around the 5:30 lesson</span><span><i class="k-o"></i>Private lesson</span></div>
+    <div class="cal-legend"><span><i class="k-t"></i>Taken</span><span><i class="k-op"></i>Open</span><span><i class="k-w"></i>After salsa, at PBD</span><span><i class="k-f"></i>Around the 5:30 lesson</span><span><i class="k-o"></i>Mark teaches at PBD</span></div>
     <div class="cal" data-one="2026-11-14,2026-11-24"></div>
    </div>
   </div>
@@ -285,7 +294,7 @@
 <section id="fit">
  <div class="wrap">
   <h2>Rooms that fit those nights</h2>
-  <p class="sub">Wednesdays we stay at PBD after salsa. For the other nights, Mark can ask the room he already uses, or we pick one of the other three.</p>
+  <p class="sub">Wednesdays we stay at PBD after salsa, and Tuesday, Thursday and Saturday we get 30 minutes at PBD after class. For a longer night, Mark can ask the room he already uses, or we pick one of the other three.</p>
   <div class="fit">
    <article class="card"><div class="ph"><img src="files/amistad.jpg" alt="Amistad classroom at Escalante with mirrors along the back wall and a hard floor" loading="lazy"><span class="price">$10/hr</span></div>
     <div class="body"><span class="kd op">Tue or Thu, ask first</span><h3>Amistad at Escalante, Tempe</h3><span class="pn">Book 2 weeks ahead, no minimum</span>
@@ -332,8 +341,10 @@
 
 <section id="responses">
  <div class="wrap">
-  <h2>Responses</h2>
-  <p class="sub">Who wrote back to Mark's emails, what they said, and where each one stands. $10/hr rooms come first. On a phone, swipe the table sideways.</p>
+  <details class="acc">
+  <summary><div><h2>Responses</h2>
+  <p class="sub">Who wrote back to Mark's emails, what they said, and where each one stands. $10/hr rooms come first. On a phone, swipe the table sideways.</p></div><span class="acc-tog" aria-hidden="true"></span></summary>
+  <div class="acc-body">
   <div class="rates-wrap"><table class="rates resp"><thead><tr><th>Place</th><th>Answer</th><th>Times</th><th>Book ahead</th><th>What they said</th><th>Latest</th></tr></thead><tbody>
    <tr><td><b>Escalante Multi-Generational Center</b><br>Tempe</td><td class="ans yes">Mark's Monday room</td><td class="tm">Amistad, Mondays 6:30 to 8 PM<br>Rentals end 8:30 PM Mon to Thu<br>City page: 7:30 PM Fri</td><td class="bk">2 weeks (30 days for after hours)</td><td>Amistad classroom has a hard floor and mirrors (<a href="files/amistad.jpg" target="_blank" rel="noopener">photo</a>), $10/hr non-resident (confirmed), no minimum during business hours. It's down the southeast hallway toward the fitness room. Sano is the dance room with mirrors but costs $50/hr.<table class="mini"><thead><tr><th>Room</th><th>Resident</th><th>Non-res</th><th>For-profit</th><th>After hours</th></tr></thead><tbody><tr><td>Amistad, Brio, Bravo, LaPaz or Conference</td><td>$5</td><td>$10</td><td>$20</td><td>$80</td></tr><tr><td>Brio/Bravo (large)</td><td>$10</td><td>$20</td><td>$40</td><td>$80</td></tr><tr><td>Sano Multi-Purpose Room</td><td>$20</td><td>$50</td><td>$110</td><td>$150</td></tr><tr><td>Senior Center Multi-purpose</td><td>$30</td><td>$60</td><td>$120</td><td>$180</td></tr><tr><td>Senior Center Multi-purpose (half)</td><td>$15</td><td>$30</td><td>$60</td><td>$120</td></tr><tr><td>Gymnasium</td><td>$90</td><td>$120</td><td>$150</td><td>$210</td></tr><tr><td>Gymnasium (half)</td><td>$50</td><td>$80</td><td>$120</td><td>$180</td></tr></tbody></table><span class="mini-cap">Per hour. Rooms rent Mon to Thu 8 AM to 8:30 PM. After hours means past that, 2-hour minimum, book 30 days out. From the Tempe fee sheet Jennifer sent.</span></td><td class="nx">Mark rents Amistad on Mondays through Jennifer and can ask her for a Tuesday or Thursday. Fridays might work until 7:30 PM.</td></tr>
    <tr><td><b>Clark Park Community Center</b><br>Tempe</td><td class="ans yes">Yes, alternate</td><td class="tm">6:30 to 8:30 PM on set dates (as of 10/7):<br>Nov 12, 17, 18, 19, 24, 25, 30<br>Dec 1, 2, 3</td><td class="bk">Request anytime, they hold it</td><td>Palm and Ash are $10/hr non-resident with a 2-hour minimum, so $20 a night. Every room has Bluetooth speakers. Rentals end by 8:30 PM Mon to Thu. Books up fast. <a href="https://form.jotform.com/260965427381060" target="_blank" rel="noopener">Reservation form</a>.<table class="mini"><thead><tr><th>Room</th><th>Resident</th><th>Non-res</th><th>For-profit</th></tr></thead><tbody><tr><td>Ash, 766 sq ft</td><td>$5</td><td>$10</td><td>$20</td></tr><tr><td>Elm, 988 sq ft</td><td>$10</td><td>$20</td><td>$40</td></tr><tr><td>Palm, 730 sq ft</td><td>$5</td><td>$10</td><td>$20</td></tr><tr><td>Cypress, 1,416 sq ft</td><td>$30</td><td>$60</td><td>$120</td></tr></tbody></table><span class="mini-cap">Per hour, during business hours. From Clark Park.</span></td><td class="nx">10/7: Christina sent open dates. The Tue and Thu ones fit. Rentals end by 8:30 PM, and it closes at 5 on Fridays.</td></tr>
@@ -349,13 +360,17 @@
    <tr><td><b>Eldorado Aquatic &amp; Fitness Center</b><br>Scottsdale</td><td class="ans no">No</td><td class="tm">None</td><td class="bk">n/a</td><td>The aquatic center has no group fitness room. The Eldorado Community Center has one, but they don't usually allow drop-in use.</td><td class="nx">10/7: Closed out for drop-in.</td></tr>
    <tr><td><b>Linton Milano Music</b><br>Mesa</td><td class="ans no">No</td><td class="tm">None after 6 PM</td><td class="bk">n/a</td><td>The studios are booked for private music lessons in the afternoons and evenings, so nothing is open after 6.</td><td class="nx">10/7: Closed out.</td></tr>
   </tbody></table></div>
+  </div>
+  </details>
  </div>
 </section>
 
 <section id="all">
  <div class="wrap">
-  <h2>Click through them</h2>
-  <p class="sub">Filter by type and city. Day passes get you a shared gym or fitness floor, so ask the front desk before you set up.</p>
+  <details class="acc">
+  <summary><div><h2>Click through them</h2>
+  <p class="sub">Filter by type and city. Day passes get you a shared gym or fitness floor, so ask the front desk before you set up.</p></div><span class="acc-tog" aria-hidden="true"></span></summary>
+  <div class="acc-body">
   <div class="filters" role="region" aria-label="Filters">
    <div class="frow" id="types"></div>
    <div class="frow"><span id="cities" class="frow" style="border:0"></span>
@@ -378,6 +393,8 @@
    <div><b>Surface</b><p>Outdoors, look for smooth concrete or pavers. Turns don't work on grass, and rough pavers chew up dance shoes.</p></div>
    <div><b>Closing time</b><p>Most Gilbert and Chandler parks close at 10 or 10:30 PM. Dr. A.J. Chandler Park is off the list while it's under renovation into 2027. Kiwanis Park goes until midnight. Soleri Bridge Plaza never closes.</p></div>
   </div>
+  </div>
+  </details>
  </div>
 </section>
 
