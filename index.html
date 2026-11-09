@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="author" content="Mark">
+<title>Practice Nights</title>
+<meta name="description" content="Which nights Mark is free to practice bachata through December, and the cheap rooms and free spots in the East Valley that fit them.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bachata Practice Nights">
+<meta property="og:description" content="Open nights through December, plus rooms and free spots that fit them.">
+<meta property="og:url" content="https://elijahcarimbocas.github.io/bachata-practice-nights/">
+<meta property="og:image" content="https://elijahcarimbocas.github.io/bachata-practice-nights/img/og.jpg?v=3">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Couples dancing bachata on a plaza at dusk with palm trees">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://elijahcarimbocas.github.io/bachata-practice-nights/img/og.jpg?v=3">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@400;500&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+ /* Partiful-style reference (DESIGN.md): white canvas, black ink + black actions, pink-violet wash only on the hero photo,
+    periwinkle-to-white section bands, 12px cards with soft 6px shadow, full pills for tabs. Single light theme on purpose. */
+ :root{
+  --ink:#000000; --canvas:#ffffff; --graphite:#333333; --slate:#666666; --ash:#999999; --silver:#cccccc;
+  --chip:rgba(0,0,0,.05); --wash:linear-gradient(rgba(150,196,255,.16) 0%,#ffffff 100%);
+  --shadow:rgba(0,0,0,.1) 0 0 6px 0; --shadow-lg:rgba(0,0,0,.1) 0 0 20px 0;
+  --lift:rgba(0,0,0,.05) 0 .8px 2.4px -.6px,rgba(0,0,0,.05) 0 2.4px 7.2px -1.25px,rgba(0,0,0,.05) 0 6.4px 19.1px -1.875px,rgba(0,0,0,.05) 0 20px 60px -2.5px;
+  --disp:'Funnel Display','Avenir Next',system-ui,sans-serif; --body:'Hanken Grotesk',system-ui,-apple-system,sans-serif;
+  color-scheme:light;
+ }
+ *{box-sizing:border-box;margin:0;padding:0}
+ html{background:var(--canvas)}
+ body{background:linear-gradient(180deg,#fbe9ff 0%,#f1ecff 22%,#e8f1ff 45%,#e6f8f7 70%,#fcecfb 100%);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.45;letter-spacing:-.02em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+ a{color:inherit;text-decoration:none}
+ img{display:block}
+ button,select{font:inherit;color:inherit;letter-spacing:inherit}
+ :focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+ .wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+ @media(max-width:600px){.wrap{padding:0 16px}}
+
+ nav{position:sticky;top:0;z-index:50;background:var(--ink)}
+ nav .wrap{display:flex;align-items:center;height:56px}
+ .logo{font-family:var(--disp);font-weight:500;font-size:22px;color:#fff;letter-spacing:-.02em}
+ .logo b{font-weight:500;color:#f8c4ff}
+
+ header{position:relative;overflow:hidden;isolation:isolate;color:#fff;background:linear-gradient(110deg,#2a1033 0%,#4b2357 55%,#7a4a86 100%)}
+ header::before{content:"";position:absolute;inset:0;z-index:-2;pointer-events:none;background:
+   linear-gradient(90deg,rgba(60,20,70,.66) 0%,rgba(150,80,160,.32) 48%,rgba(248,196,255,.12) 100%),
+   linear-gradient(0deg,rgba(0,0,0,.35) 0%,transparent 55%)}
+  .hero-body{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:40px;align-items:center;padding-block:72px 64px}
+ h1{font-family:var(--disp);font-weight:500;font-size:clamp(2.6rem,6vw,4.6rem);line-height:1;letter-spacing:-.02em;text-wrap:balance}
+ .lede{font-size:18px;margin-top:16px;color:rgba(255,255,255,.92)}
+ header .facts{display:grid;grid-template-columns:repeat(4,minmax(0,max-content));gap:10px;margin-top:28px}
+ header .facts div{background:rgba(255,255,255,.16);backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px);border-radius:12px;padding:10px 16px}
+ header .facts b{display:block;font-family:var(--disp);font-weight:500;font-size:30px;line-height:1.05}
+ header .facts span{font-size:13px;color:rgba(255,255,255,.85)}
+ @media(max-width:600px){header .facts{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}header .facts div{padding:8px 10px}header .facts b{font-size:22px}header .facts span{font-size:11px;display:block;line-height:1.25}}
+ .hero-cap{font-size:13px;color:rgba(255,255,255,.85);margin-top:22px}
+ @media(max-width:860px){.hero-body{grid-template-columns:1fr;padding-block:48px 40px}}
+
+ section{padding:80px 0}
+ #gear,#rates{background:transparent}
+ h2{font-family:var(--disp);font-weight:500;font-size:clamp(2rem,4vw,2.75rem);line-height:1.05;letter-spacing:-.02em}
+ .sub{color:var(--slate);margin-top:10px}
+
+ .filters{position:sticky;top:56px;z-index:40;background:rgba(245,238,255,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:14px 0;margin-top:24px}
+ .frow{display:inline-flex;flex-wrap:wrap;gap:4px;background:var(--chip);border-radius:960px;padding:4px}
+ .filters > .frow:last-child{background:none;padding:0;gap:10px;align-items:center}
+ .f{border:0;background:none;border-radius:960px;padding:8px 16px;font-size:14px;font-weight:550;color:var(--graphite);cursor:pointer}
+ .f:hover{color:var(--ink)}
+ .f[aria-pressed="true"]{background:#fff;color:var(--ink);box-shadow:var(--shadow)}
+ .sort{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--slate)}
+ .sort select{border:1px solid var(--silver);border-radius:8px;padding:7px 10px;background:#fff;font-size:14px}
+ .count{font-size:14px;color:var(--ash);margin:14px 0 18px}
+
+ .ss{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:32px;align-items:start}
+ .ss-list{position:relative;list-style:none;max-height:680px;overflow-y:auto;padding:4px 0;scrollbar-width:thin}
+ .ss-item{display:flex;justify-content:space-between;align-items:baseline;gap:14px;width:100%;text-align:left;background:none;border:0;padding:6px 0;cursor:pointer;font-family:var(--disp);font-weight:500;font-size:clamp(22px,2.3vw,30px);line-height:1.1;letter-spacing:-.02em}
+ .ss-p{flex:none;font-family:var(--body);font-size:14px;font-weight:600;color:var(--ash)}
+ .ss-item[aria-current="true"] .ss-p{color:var(--ink)}
+ .ch{position:relative;display:inline-block;overflow:hidden;vertical-align:bottom}
+ .ch i{font-style:normal;display:inline-block;transition:transform .3s cubic-bezier(.25,.46,.45,.94) calc(var(--i) * 25ms)}
+ .ch i:first-child{opacity:.2}
+ .ch i:last-child{position:absolute;left:0;top:0;transform:translateY(110%)}
+ .ss-item[aria-current="true"] .ch i:first-child{transform:translateY(-110%)}
+ .ss-item[aria-current="true"] .ch i:last-child{transform:none}
+ .ss-stage{background:#fff;border-radius:16px;box-shadow:var(--lift);overflow:hidden;display:flex;flex-direction:column;min-width:0;touch-action:pan-y}
+ .ss-imgs{display:grid;aspect-ratio:16/10;overflow:hidden;background:#f3f3f3}
+ .ss-imgs > *{grid-area:1/1;width:100%;height:100%;object-fit:cover;clip-path:polygon(0 0,100% 0,100% 0,0 0);transition:clip-path .8s cubic-bezier(.33,1,.68,1)}
+ .ss-imgs > .on{clip-path:polygon(0 0,100% 0,100% 100%,0 100%);z-index:1}
+ .ss-none{background:var(--wash);display:flex;align-items:flex-end;padding:22px}
+ .ss-none span{font-family:var(--disp);font-weight:500;font-size:clamp(48px,8vw,84px);line-height:1}
+ .ss-info{padding:22px 24px;display:flex;flex-direction:column;gap:8px}
+ .ss-info .big{font-family:var(--disp);font-weight:500;font-size:44px;line-height:1}
+ .ss-info h3{font-size:22px;font-weight:700;letter-spacing:-.04em;line-height:1.2}
+ .ss-nav{display:flex;align-items:center;gap:10px;padding:14px 24px;border-top:1px solid #eee}
+ .ss-btn{border:1px solid var(--ink);background:#fff;border-radius:8px;padding:9px 20px;font-size:14px;font-weight:700;letter-spacing:-.04em;cursor:pointer}
+ #ssNext{background:var(--ink);color:#fff}
+ .ss-btn:hover{opacity:.85}
+ .ss-ct{flex:1;text-align:center;font-size:14px;color:var(--ash);font-variant-numeric:tabular-nums}
+ @media(max-width:760px){
+  .ss{grid-template-columns:1fr;gap:16px}
+  .ss-list{display:block;max-height:380px;overflow-y:auto;overflow-x:hidden}
+  .ss-item{font-size:22px;padding:5px 0}
+  .ss-p{font-size:13px}
+ }
+ @media (prefers-reduced-motion:reduce){.ch i,.ss-imgs > *,.rot img{transition:none}}
+
+ .gridwrap{margin-top:80px}
+ .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:24px}
+ @media(max-width:980px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+ @media(max-width:620px){.grid{grid-template-columns:1fr}}
+ .card{background:#fff;border-radius:12px;box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column;min-width:0}
+ .ph{position:relative;aspect-ratio:16/10;overflow:hidden;background:#f3f3f3}
+ .ph img{width:100%;height:100%;object-fit:cover}
+ .ph.none{background:var(--wash)}
+ .ph.none::before{content:attr(data-city);position:absolute;left:16px;bottom:14px;font-family:var(--disp);font-weight:500;font-size:28px;color:rgba(0,0,0,.25)}
+ .rot{position:relative}
+ .rot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .9s ease}
+ .rot img.show{opacity:1}
+ .price{position:absolute;left:12px;top:12px;z-index:1;background:#fff;color:var(--ink);border-radius:960px;padding:6px 12px;font-size:14px;font-weight:700;letter-spacing:-.04em;box-shadow:var(--shadow)}
+ .ptag{position:absolute;right:12px;top:12px;z-index:1;background:var(--ink);color:#fff;border-radius:960px;padding:6px 12px;font-size:12px;font-weight:700}
+ .body{padding:12px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+ .kd{font-size:13px;color:var(--ash)}
+ .card h3{font-size:18px;font-weight:700;letter-spacing:-.04em;line-height:1.25}
+ .pn{font-size:14px;color:var(--graphite)}
+ .what{font-size:14px;color:var(--slate)}
+ .catch{font-size:13.5px;color:var(--graphite);background:rgba(0,0,0,.04);border-radius:8px;padding:8px 10px}
+ .ct{font-size:13px;color:var(--ash);overflow-wrap:anywhere}
+ .links{display:flex;gap:8px;margin-top:auto;padding-top:10px}
+ .links a{border:1px solid var(--ink);border-radius:8px;padding:7px 16px;font-size:13px;font-weight:700;letter-spacing:-.04em}
+ .links a:first-child{background:var(--ink);color:#fff}
+ .links a:hover{opacity:.85}
+ .empty{color:var(--slate);padding:24px 0}
+
+ .notes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:56px}
+ @media(max-width:860px){.notes{grid-template-columns:1fr}}
+ .notes div{background:var(--wash);border-radius:12px;padding:20px}
+ .notes b{display:block;font-size:18px;font-weight:700;letter-spacing:-.04em;margin-bottom:6px}
+ .notes p{color:var(--slate);font-size:15px}
+
+ .gear{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);margin-top:28px;background:#fff;border-radius:16px;box-shadow:var(--lift);overflow:hidden}
+ .gear figure{display:flex;align-items:center;justify-content:center;padding:24px;background:linear-gradient(135deg,rgba(248,196,255,.35),rgba(150,196,255,.25))}
+ .gear figure img{max-height:225px;width:auto}
+ .gear .txt{padding:24px;display:flex;flex-direction:column;gap:14px}
+ .gear .txt p{color:var(--graphite)}
+ .gear .facts{display:flex;flex-wrap:wrap;gap:10px}
+ .gear .facts div{background:var(--chip);border-radius:12px;padding:10px 14px}
+ .gear .facts b{display:block;font-family:var(--disp);font-weight:500;font-size:26px;line-height:1.05}
+ .gear .facts span{font-size:13px;color:var(--slate)}
+ .gear .src{font-size:13px;color:var(--ash)} .gear .src a{text-decoration:underline;text-underline-offset:2px}
+ @media(max-width:760px){.gear{grid-template-columns:1fr}.gear figure img{max-height:180px}}
+
+ .rates-wrap{overflow-x:auto;margin-top:24px;background:#fff;border-radius:12px;box-shadow:var(--shadow)}
+ table.rates{border-collapse:collapse;width:100%;min-width:980px;font-size:14px}
+ .rates th{text-align:left;font-size:13px;font-weight:700;color:var(--graphite);background:#fafafa;padding:12px 14px;position:sticky;top:0}
+ .rates td{padding:12px 14px;border-top:1px solid #eee;vertical-align:top;color:var(--slate)}
+ .rates td b{color:var(--ink);font-weight:600}
+ .rates .cityrow td{font-family:var(--disp);font-weight:500;font-size:22px;color:var(--ink);background:var(--wash);padding-top:18px}
+ .rates a{text-decoration:underline;text-underline-offset:2px;color:var(--ink)}
+ .rates .tag{font-size:11px;color:var(--ash);margin-left:4px}
+ .np{color:var(--ash)}
+ table.rates.resp{min-width:1080px}
+ table.resp>tbody>tr>td:first-child,table.resp>thead>tr>th:first-child{position:sticky;left:0;z-index:1;background:#fff}
+ table.resp>thead>tr>th:first-child{background:#fafafa;z-index:2}
+ .resp .ans{white-space:normal}
+ .resp .ans{font-weight:700;white-space:nowrap}
+ .resp .tm,.resp .bk{color:var(--ink);min-width:150px}
+ .resp .mini{border-collapse:collapse;margin-top:10px;font-size:12.5px;width:100%}
+ .resp .mini th,.resp .mini td{display:table-cell;padding:4px 8px;border:1px solid #eee;text-align:left;color:var(--ink)}
+ .resp .mini th{background:#fafafa;font-weight:700}
+ .resp .mini td::before{content:none}
+ .resp .mini tr{display:table-row;padding:0;border:0}
+ .resp .mini thead{display:table-header-group}
+ .resp .mini tbody{display:table-row-group;width:auto}
+ .resp .mini-cap{display:block;font-size:11px;color:var(--ash);margin-top:4px}
+ .resp tr.child>td{border-top:1px dashed #eee}
+ .resp a[href^="tel:"]{white-space:nowrap}
+ .resp tr.child>td:first-child{padding-left:30px}
+ .calblock{margin-top:12px;background:#fff;border-radius:12px;box-shadow:var(--shadow);padding:16px 18px}
+ .cal-legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12.5px;color:var(--slate);margin-bottom:12px}
+ .cal-legend i{display:inline-block;width:12px;height:12px;border-radius:4px;margin-right:6px;vertical-align:-1px}
+ .cal{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+ .k-t,.cal .g .t{background:#e6e6e6}.cal .g .t{color:var(--slate);text-decoration:line-through}
+ .k-w,.cal .g .w{background:#1f7a3a}.k-f,.cal .g .fr{background:#b14ee0}.k-o,.cal .g .o{background:#c2410c}
+ .cal .g .w,.cal .g .fr,.cal .g .o{color:#fff;font-weight:800}
+ .cal .g .ps{opacity:.3}
+ .when{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:16px;margin-top:24px}
+ .when .calblock{margin-top:0}
+ .days{background:#fff;border-radius:12px;box-shadow:var(--shadow);padding:4px 20px}
+ .day{display:grid;grid-template-columns:136px minmax(0,1fr);gap:14px;padding:14px 0;align-items:baseline}
+ .day+.day{border-top:1px solid #eee}
+ .day>b{display:flex;align-items:center;gap:8px;font-family:var(--disp);font-weight:500;font-size:24px;line-height:1.1}
+ .day>b i{width:12px;height:12px;border-radius:4px;flex:none}
+ .day strong{display:block;font-weight:700;letter-spacing:-.03em}
+ .day span{display:block;color:var(--slate);font-size:14.5px;margin-top:2px}
+ .day.t strong{color:var(--slate)}
+ @media(max-width:860px){.when{grid-template-columns:1fr}}
+ @media(max-width:600px){.days{padding:2px 14px}.day{grid-template-columns:104px minmax(0,1fr);gap:10px}.day>b{font-size:18px;gap:6px}}
+ .fit{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:24px}
+ @media(max-width:1100px){.fit{grid-template-columns:repeat(2,minmax(0,1fr))}}
+ @media(max-width:620px){.fit{grid-template-columns:1fr}}
+ .kd.w{color:#1f7a3a;font-weight:700}.kd.fr{color:#9a3cc7;font-weight:700}.kd.a{color:var(--ink);font-weight:700}
+ .cal .mo b{display:block;font-family:var(--disp);font-weight:500;font-size:15px;margin-bottom:6px;color:var(--ink)}
+ .cal .g{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px;text-align:center;font-size:13px}
+ .cal .g span{padding:9px 0;border-radius:6px;color:var(--ash)}
+ .cal .g .dw{font-weight:700;color:var(--slate)}
+ @media(max-width:600px){.calblock{padding:10px}.cal{gap:10px}.cal .mo b{font-size:12px}.cal .g{gap:2px;font-size:11px}.cal .g span{padding:4px 0;border-radius:4px}.cal-legend{font-size:11px}}
+ .resp .yes{color:#1f7a3a}.resp .no{color:#d62828}.resp .wait{color:var(--ash)}
+
+ .hero-rot{aspect-ratio:4/5;max-height:520px;width:100%;border-radius:12px;overflow:hidden;border:6px solid #fff;box-shadow:var(--shadow-lg);background:#2a1033}
+ .hero-cap{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.9);margin-top:12px}
+ @media(max-width:860px){.hero-rot{aspect-ratio:16/10}}
+ .rates-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+ .rates-head > div{flex:1 1 420px;min-width:0}
+ .dayfilter{display:flex;flex-direction:column;gap:8px;font-size:14px;color:var(--slate)}
+ .dayfilter .frow{background:var(--chip)}
+ @media(max-width:600px){.dayfilter{width:100%}}
+ .rates tr.alt td{background:#fdf0ff}
+ .rates td.hit{color:var(--ink);font-weight:700}
+
+ .stamp{position:absolute;right:12px;bottom:12px;z-index:2;transform:rotate(-8deg);border:3px solid #d62828;color:#d62828;background:rgba(255,255,255,.88);border-radius:6px;padding:4px 10px;font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;box-shadow:0 0 0 2px rgba(214,40,40,.15) inset}
+ .stamp.no{background:#d62828;color:#fff;font-size:15px;letter-spacing:.16em}
+ .stamp.draft{border-color:#8a8a8a;color:#5a5a5a;transform:rotate(-4deg)}
+ .ss-info{position:relative}
+ .ss-info .stamp{top:18px;right:20px;bottom:auto}
+
+ .ss-list{-webkit-mask-image:linear-gradient(#000 86%,transparent);mask-image:linear-gradient(#000 86%,transparent);padding-bottom:40px}
+
+ @media(max-width:760px){.filters{position:static;backdrop-filter:none;-webkit-backdrop-filter:none;background:none}}
+
+ header .facts .sent-tile{background:#fff;border:3px solid #d62828;transform:rotate(-2deg)}
+ header .facts .sent-tile b{color:#d62828}
+ header .facts .sent-tile span{color:#d62828;font-weight:700}
+
+ footer{background:var(--ink);color:#b3b3b3;padding:48px 0 64px;font-size:13px}
+ footer h4{font-size:14px;font-weight:700;color:#fff;margin-bottom:10px}
+ footer ul{list-style:none;display:grid;gap:4px}
+ footer a{text-decoration:underline;text-underline-offset:2px;color:#fff}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="logo" href="#top">Practice <b>Nights</b></a></div></nav>
+
+<header id="top">
+ <div class="wrap hero-body">
+  <div>
+   <h1>When and where we can practice</h1>
+   <p class="lede">Mark's open nights through December, plus the cheap rooms and free spots that fit them.</p>
+   <div class="facts">
+    <div><b id="f-cheap">$1</b><span>Cheapest indoor</span></div>
+    <div><b id="f-free">0</b><span>Free spots</span></div>
+    <div><b id="f-all">0</b><span>Places</span></div>
+    <div class="sent-tile"><b id="f-sent">0</b><span>Places Mark emailed</span></div>
+   </div>
+  </div>
+  <figure><div class="hero-rot rot" id="heroRot"></div><figcaption class="hero-cap" id="heroCap"></figcaption></figure>
+ </div>
+</header>
+
+<section id="when">
+ <div class="wrap">
+  <h2>When Mark's free</h2>
+  <p class="sub">Through December. Mondays are taken, Wednesdays and Fridays are open.</p>
+  <div class="when">
+   <div class="days">
+    <div class="day t"><b><i class="k-t"></i>Mon</b><div><strong>Taken</strong><span>Mark practices combos with someone from the team.</span></div></div>
+    <div class="day"><b><i class="k-w"></i>Wed</b><div><strong>Open after the 8 PM salsa class</strong><span>Our 7 PM practice comes first.</span></div></div>
+    <div class="day"><b><i class="k-f"></i>Fri</b><div><strong>Open before 5:30 or after 6:30 PM</strong><span>Mark has a private lesson in between.</span></div></div>
+    <div class="day"><b><i class="k-o"></i>Sat 11/14</b><div><strong>Private lesson, 1 to 2:30 PM</strong></div></div>
+    <div class="day"><b><i class="k-o"></i>Tue 11/24</b><div><strong>Private lesson at 8 PM</strong></div></div>
+   </div>
+   <div class="calblock">
+    <div class="cal-legend"><span><i class="k-t"></i>Taken</span><span><i class="k-w"></i>Open after salsa</span><span><i class="k-f"></i>Open around the 5:30 lesson</span><span><i class="k-o"></i>Private lesson</span></div>
+    <div class="cal" data-one="2026-11-14,2026-11-24"></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="fit">
+ <div class="wrap">
+  <h2>Rooms that fit those nights</h2>
+  <p class="sub">Mark can ask the room he already uses for a second night, or we try one of the other three.</p>
+  <div class="fit">
+   <article class="card"><div class="ph"><img src="files/amistad.jpg" alt="Amistad classroom at Escalante with mirrors along the back wall and a hard floor" loading="lazy"><span class="price">$10/hr</span></div>
+    <div class="body"><span class="kd a">Ask for a 2nd night</span><h3>Amistad at Escalante, Tempe</h3><span class="pn">No minimum during business hours</span>
+     <p class="what">Mark already rents this room on Mondays, so it's one email to Jennifer. Hard floor and mirrors.</p>
+     <p class="catch">The fee sheet says rooms rent Mon to Thu only. The city's page lists Fridays until 7:30 PM, so Mark would ask about that. Wednesday after salsa would be past 8:30, which is after hours there ($80/hr, 2-hour minimum).</p>
+     <div class="links"><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Escalante+Community+Center%2C+2150+E+Orange+St%2C+Tempe%2C+AZ+85281" target="_blank" rel="noopener">Directions</a></div></div></article>
+   <article class="card"><div class="ph"><img src="files/eldorado-room-1.jpg" alt="Eldorado Community Center Room 1, an empty room with a hard floor" loading="lazy"><span class="price">$25/hr + $10 permit</span></div>
+    <div class="body"><span class="kd fr">Fri after the lesson</span><h3>Eldorado Room 1, Scottsdale</h3><span class="pn">One permit can cover several dates</span>
+     <p class="what">Big empty room with a hard floor. Scottsdale says Fridays are its most open night through December.</p>
+     <p class="catch">The building closes at 8 PM, so after the lesson it's an hour at most.</p>
+     <div class="links"><a href="tel:4803127707">Call to book</a><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Eldorado+Park+Community+Center%2C+7641+E+Murray+Ln%2C+Scottsdale%2C+AZ+85257" target="_blank" rel="noopener">Directions</a></div></div></article>
+   <article class="card"><div class="ph"><img src="img/freestone-recreation-center.jpg" alt="Freestone Recreation Center in Gilbert" loading="lazy"><span class="price">$31.25 for 1 hr</span></div>
+    <div class="body"><span class="kd w">Wed after salsa</span><h3>Freestone Rec Center, Gilbert</h3><span class="pn">Open until 10 PM</span>
+     <p class="what">Aerobics Room B has a wood floor. Zaina offered Mondays and Wednesdays after 6.</p>
+     <p class="catch">That's a bit over $30 a night, plus a $100 refundable deposit. Kiwanis in Tempe also stays open until 10, at $30/hr with a 2-hour minimum.</p>
+     <div class="links"><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Freestone+Recreation+Center%2C+1141+E+Guadalupe+Rd%2C+Gilbert%2C+AZ+85234" target="_blank" rel="noopener">Directions</a></div></div></article>
+   <article class="card free"><div class="ph"><img src="img/soleri-bridge-plaza-c0.jpg" alt="Soleri Bridge Plaza on the Scottsdale Waterfront" loading="lazy"><span class="price">Free</span></div>
+    <div class="body"><span class="kd a">Any night</span><h3>Soleri Bridge Plaza or Kiwanis Park</h3><span class="pn">Mark brings the speaker. No booking.</span>
+     <p class="what">Soleri is a paved plaza on the Scottsdale canal, open 24/7. Kiwanis Park in Tempe is lit until midnight.</p>
+     <p class="catch">Soleri gets dark and quiet at night, so bring a light if the plaza lights are off.</p>
+     <div class="links"><a href="https://www.google.com/maps/search/?api=1&amp;query=Soleri+Bridge+and+Plaza+Scottsdale+AZ" target="_blank" rel="noopener">Soleri</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Kiwanis+Park+Tempe+AZ" target="_blank" rel="noopener">Kiwanis Park</a></div></div></article>
+  </div>
+ </div>
+</section>
+
+<section id="gear">
+ <div class="wrap">
+  <h2>The speaker</h2>
+  <div class="gear">
+   <figure><img src="img/jbl-partybox-encore-essential.png" alt="JBL PartyBox Encore Essential speaker" loading="lazy"></figure>
+   <div class="txt">
+    <p>Mark brings a JBL PartyBox Encore Essential, so we don't need a room with a sound system. It runs on battery, which is why the parks and plazas on this list work at all.</p>
+    <div class="facts">
+     <div><b>100W</b><span>Output</span></div>
+     <div><b>6 hr</b><span>Battery</span></div>
+     <div><b>13 lb</b><span>Weight</span></div>
+     <div><b>IPX4</b><span>Splash proof</span></div>
+    </div>
+    <p class="src">Specs from <a href="https://www.jbl.com/PARTYBOX-ENCORE-ESSENTIAL-.html" target="_blank" rel="noopener">JBL</a>. Battery time is JBL's max and drops at high volume.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="responses">
+ <div class="wrap">
+  <h2>Responses</h2>
+  <p class="sub">Who wrote back to Mark's emails, what they said, and where each one stands. $10/hr rooms come first. On a phone, swipe the table sideways.</p>
+  <div class="rates-wrap"><table class="rates resp"><thead><tr><th>Place</th><th>Answer</th><th>Times</th><th>Book ahead</th><th>What they said</th><th>Latest</th></tr></thead><tbody>
+   <tr><td><b>Escalante Multi-Generational Center</b><br>Tempe</td><td class="ans yes">Mark's Monday room</td><td class="tm">Amistad, Mondays 6:30 to 8 PM<br>Rentals end 8:30 PM Mon to Thu<br>City page: 7:30 PM Fri</td><td class="bk">2 weeks (30 days for after hours)</td><td>Amistad classroom has a hard floor and mirrors (<a href="files/amistad.jpg" target="_blank" rel="noopener">photo</a>), $10/hr non-resident (confirmed), no minimum during business hours. It's down the southeast hallway toward the fitness room. Sano is the dance room with mirrors but costs $50/hr.<table class="mini"><thead><tr><th>Room</th><th>Resident</th><th>Non-res</th><th>For-profit</th><th>After hours</th></tr></thead><tbody><tr><td>Amistad, Brio, Bravo, LaPaz or Conference</td><td>$5</td><td>$10</td><td>$20</td><td>$80</td></tr><tr><td>Brio/Bravo (large)</td><td>$10</td><td>$20</td><td>$40</td><td>$80</td></tr><tr><td>Sano Multi-Purpose Room</td><td>$20</td><td>$50</td><td>$110</td><td>$150</td></tr><tr><td>Senior Center Multi-purpose</td><td>$30</td><td>$60</td><td>$120</td><td>$180</td></tr><tr><td>Senior Center Multi-purpose (half)</td><td>$15</td><td>$30</td><td>$60</td><td>$120</td></tr><tr><td>Gymnasium</td><td>$90</td><td>$120</td><td>$150</td><td>$210</td></tr><tr><td>Gymnasium (half)</td><td>$50</td><td>$80</td><td>$120</td><td>$180</td></tr></tbody></table><span class="mini-cap">Per hour. Rooms rent Mon to Thu 8 AM to 8:30 PM. After hours means past that, 2-hour minimum, book 30 days out. From the Tempe fee sheet Jennifer sent.</span></td><td class="nx">Mark rents Amistad on Mondays through Jennifer and can ask her about a second night, Friday included.</td></tr>
+   <tr><td><b>Clark Park Community Center</b><br>Tempe</td><td class="ans yes">Yes, alternate</td><td class="tm">6:30 to 8:30 PM on set dates (as of 10/7):<br>Nov 12, 17, 18, 19, 24, 25, 30<br>Dec 1, 2, 3</td><td class="bk">Request anytime, they hold it</td><td>Palm and Ash are $10/hr non-resident with a 2-hour minimum, so $20 a night. Every room has Bluetooth speakers. Rentals end by 8:30 PM Mon to Thu. Books up fast. <a href="https://form.jotform.com/260965427381060" target="_blank" rel="noopener">Reservation form</a>.<table class="mini"><thead><tr><th>Room</th><th>Resident</th><th>Non-res</th><th>For-profit</th></tr></thead><tbody><tr><td>Ash, 766 sq ft</td><td>$5</td><td>$10</td><td>$20</td></tr><tr><td>Elm, 988 sq ft</td><td>$10</td><td>$20</td><td>$40</td></tr><tr><td>Palm, 730 sq ft</td><td>$5</td><td>$10</td><td>$20</td></tr><tr><td>Cypress, 1,416 sq ft</td><td>$30</td><td>$60</td><td>$120</td></tr></tbody></table><span class="mini-cap">Per hour, during business hours. From Clark Park.</span></td><td class="nx">10/7: Christina sent open dates, mostly Wed and Thu. Rentals end by 8:30 PM and it closes at 5 on Fridays. That misses both of Mark's open nights.</td></tr>
+   <tr><td><b>Westside Multi-Generational Center</b><br>Tempe</td><td class="ans yes">Yes</td><td class="tm">Riverside classroom, Tue 6:30 to 8:30 PM:<br>Oct 20, 27<br>Nov 3, 17<br>Dec 1, 8, 15</td><td class="bk">2 weeks (paid in full by then)</td><td>$5/hr resident, $10/hr non-resident, 2-hour minimum. Every room is carpet, none have hard floors. Mon, Wed and Fri nights go to a night school. Room <a href="files/westside-room-form.pdf" target="_blank" rel="noopener">form</a>.<table class="mini"><thead><tr><th>Room</th><th>Resident</th><th>Non-res</th><th>For-profit</th></tr></thead><tbody><tr><td>Riverside/Sunset</td><td>$5/$10</td><td>$10/$20</td><td>$20/$40</td></tr><tr><td>Lindon Park</td><td>$5</td><td>$10</td><td>$20</td></tr><tr><td>Los Vecinos</td><td>$5</td><td>$10</td><td>$20</td></tr><tr><td>Cahill Multi-purpose</td><td>$30</td><td>$60</td><td>$120</td></tr><tr><td>Gym</td><td>$90</td><td>$120</td><td>$150</td></tr></tbody></table><span class="mini-cap">Per hour, business hours only (Mon to Fri until 8:45 PM). 2-hour minimum. From the Westside fee sheet Alicia sent.</span></td><td class="nx">10/8: Alicia offered Riverside on 7 Tuesdays, Oct 20 to Dec 15. Carpet floor. Fill out the form to book. $20 a night.</td></tr>
+   <tr><td><b>Mesa Parks: Red Mountain and Eagles</b><br>Mesa</td><td class="ans yes">Yes</td><td class="tm">Eagles: Mon before 5:30 or 8 to 8:30 PM<br>Tue not guaranteed<br>Red Mountain: no Monday evenings</td><td class="bk">Not stated</td><td>Red Mountain's mirror room is $20/hr for half or $34/hr for the whole room. The Eagles dance room is $42/hr. Those are Mesa resident rates. After public hours it's another $35/hr for staff.</td><td class="nx">10/9: Michael Cerino says Red Mountain has no Monday evenings (a dance class has the room) and needs advance notice. He pointed to his supervisor, Nicholas Harkins. Eagles Mondays don't fit either.</td></tr>
+   <tr><td><b>Scottsdale Facility Booking</b><br>Scottsdale</td><td class="ans yes">Yes</td><td class="tm">Eldorado Community Center Room 1<br>Booked Mon 10/12, 6:30 to 7:30 PM<br>Mon and Fri most open through December, Fri the most</td><td class="bk">Not stated (online needs 10 days)</td><td>Karl Hain sent a <a href="files/eldorado-room-1.jpg" target="_blank" rel="noopener">photo of Room 1</a>: big, empty, hard floor. $25/hr plus a one-time $10 processing fee per permit, and several dates can go on one permit. Book by phone at <a href="tel:4803127707">480-312-7707</a> (9 to 3 weekdays) or online.<table class="mini"><thead><tr><th>Indoor room or court</th><th>Rate</th></tr></thead><tbody><tr><td>Extra Small (up to 20 people)</td><td>$5</td></tr><tr><td>Small (under 500 sq ft)</td><td>$20</td></tr><tr><td>Medium (501 to 1,000 sq ft)</td><td>$25</td></tr><tr><td>Large (1,001 to 2,499 sq ft)</td><td>$40</td></tr><tr><td>Extra Large (2,500+ sq ft)</td><td>$60</td></tr><tr><td>Tennis or racquetball court, 6 to 9 PM</td><td>$5 resident / $8 non-res per person, 1.5 hr</td></tr></tbody></table><span class="mini-cap">Rooms are per hour, same for residents and non-residents. From Scottsdale's fee schedule, page 7 (effective 7/1/2025). Online, rooms only show until 5 PM and need 10 days notice and staff approval.</span></td><td class="nx">10/12: Booked Room 1 with April Slater for one hour, 6:30 to 7:30. Paid $35 ($25 room + $10 permit). 10/8: Had passed on it at $37.50 for an hour and a half plus the permit.</td></tr>
+   <tr class="child"><td><b>Scottsdale Senior Center</b><br>Scottsdale</td><td class="ans wait">Pending</td><td class="tm"></td><td class="bk"></td><td></td><td class="nx">Mark will call <a href="tel:4803121700">480-312-1700</a>.</td></tr>
+   <tr><td><b>Freestone Recreation Center</b><br>Gilbert</td><td class="ans yes">Yes, over budget</td><td class="tm">Mon and Wed after 6 PM (recurring)<br>Open until 10 PM</td><td class="bk">Pay in full when you book</td><td>Aerobics Room B, wood floor. $25/hr Gilbert resident, $31.25/hr non-resident. They'd waive the 2-hour minimum for a 1-hour booking. $100 refundable deposit. No using the room on a day pass.</td><td class="nx">10/7: Zaina offered Mon and Wed after 6. Mark passed at $31.25 for one hour. It's back on the list for Wednesday after salsa.</td></tr>
+   <tr><td><b>Kiwanis Recreation Center</b><br>Tempe</td><td class="ans yes">Yes, over budget</td><td class="tm">Mon to Thu until 10 PM<br>Fri until 7 PM</td><td class="bk">Not stated</td><td>$30/hr per classroom, $55/hr for both, 2-hour minimum. Same weekday every month works if it's open.</td><td class="nx">10/7: Mark passed at $60 a night. It stays open until 10, so it's back on the list for Wednesday after salsa.</td></tr>
+   <tr><td><b>North Tempe Multi-Generational Center</b><br>Tempe</td><td class="ans no">No, carpet</td><td class="tm">TJ suggests 6 to 7:30 PM<br>Mark asked for every Monday</td><td class="bk">Not stated</td><td>TJ wrote back 9 days after the first email. The building closes at 8, so he suggested 6 to 7:30. We're non-residents, so any 25-person classroom or conference room is $10/hr, $15 a night. Joshua and Juniper, the 40-person rooms, are $30/hr. TJ suggested Manzanita or Mesquite, and both are carpet. <a href="https://form.jotform.com/261045330593149" target="_blank" rel="noopener">Rental form</a>.<table class="mini"><thead><tr><th>Room</th><th>People</th><th>Resident</th><th>Non-res</th><th>Commercial</th></tr></thead><tbody><tr><td>Small Conference Room</td><td>10</td><td>$5</td><td>$10</td><td>$20</td></tr><tr><td>Large Conference, Sisso, Palo Verde, Manzanita or Mesquite</td><td>25</td><td>$5</td><td>$10</td><td>$20</td></tr><tr><td>Manzanita/Mesquite combined</td><td>50</td><td>$10</td><td>$20</td><td>$40</td></tr><tr><td>Joshua or Juniper</td><td>40</td><td>$15</td><td>$30</td><td>$60</td></tr><tr><td>Joshua/Juniper combined</td><td>80</td><td>$30</td><td>$60</td><td>$120</td></tr></tbody></table><span class="mini-cap">Per hour. From Tempe's North Tempe rate sheet. Rentals stop at 7:45 PM.</span></td><td class="nx">10/15: TJ asked which night works and suggested 6 to 7:30. Mark asked for a standing Monday at 6 to 7:30 and the hourly rate. TJ said Mondays work and pointed to Manzanita or Mesquite. Both are carpet, so it's out.</td></tr>
+   <tr><td><b>Pyle Adult Recreation Center</b><br>Tempe</td><td class="ans no">No</td><td class="tm">Not given</td><td class="bk">Not stated</td><td>Pyle pointed to the Tucson and Payson rooms and the rental form. The Dance Room is never open to rent. Tucson and Payson are classrooms: $5/hr resident, $10/hr non-resident on the <a href="files/tempe-room-fees.pdf" target="_blank" rel="noopener">Tempe fee sheet</a>, 2-hour minimum, up to 30 people, rentals until 8:30 PM Mon to Thu.</td><td class="nx">10/8: Pyle said the Dance Room never rents. Closed out.</td></tr>
+   <tr><td><b>Tumbleweed Recreation Center</b><br>Chandler</td><td class="ans no">No</td><td class="tm">None</td><td class="bk">n/a</td><td>No dance practice in the Meeting Room or any other space, and no speakers anywhere in the building.</td><td class="nx">10/7: Closed out.</td></tr>
+   <tr><td><b>Eldorado Aquatic &amp; Fitness Center</b><br>Scottsdale</td><td class="ans no">No</td><td class="tm">None</td><td class="bk">n/a</td><td>The aquatic center has no group fitness room. The Eldorado Community Center has one, but they don't usually allow drop-in use.</td><td class="nx">10/7: Closed out for drop-in.</td></tr>
+   <tr><td><b>Linton Milano Music</b><br>Mesa</td><td class="ans no">No</td><td class="tm">None after 6 PM</td><td class="bk">n/a</td><td>The studios are booked for private music lessons in the afternoons and evenings, so nothing is open after 6.</td><td class="nx">10/7: Closed out.</td></tr>
+  </tbody></table></div>
+ </div>
+</section>
+
+<section id="all">
+ <div class="wrap">
+  <h2>Click through them</h2>
+  <p class="sub">Filter by type and city. Day passes get you a shared gym or fitness floor, so ask the front desk before you set up.</p>
+  <div class="filters" role="region" aria-label="Filters">
+   <div class="frow" id="types"></div>
+   <div class="frow"><span id="cities" class="frow" style="border:0"></span>
+    <label class="sort" for="sort">Sort <select id="sort"><option value="price">Cheapest first</option><option value="city">By city</option></select></label>
+   </div>
+  </div>
+  <p class="count" id="count"></p>
+  <div class="ss" id="ss" aria-roledescription="carousel" aria-label="Practice spots">
+   <ol class="ss-list" id="ssList"></ol>
+   <div class="ss-stage" id="ssStage">
+    <div class="ss-imgs" id="ssImgs"></div>
+    <div class="ss-info" id="ssInfo" aria-live="polite"></div>
+    <div class="ss-nav"><button type="button" class="ss-btn" id="ssPrev">Prev</button><span class="ss-ct" id="ssCt"></span><button type="button" class="ss-btn" id="ssNext">Next</button></div>
+   </div>
+  </div>
+  <div class="gridwrap"><h2>All of them at once</h2><div class="grid" id="grid" style="margin-top:22px"></div></div>
+
+  <div class="notes">
+   <div><b>Day passes</b><p>The $1 to $6 passes cover a gym or fitness room you share. Some front desks will let two people practice in a corner and some won't.</p></div>
+   <div><b>Surface</b><p>Outdoors, look for smooth concrete or pavers. Turns don't work on grass, and rough pavers chew up dance shoes.</p></div>
+   <div><b>Closing time</b><p>Most Gilbert and Chandler parks close at 10 or 10:30 PM. Dr. A.J. Chandler Park is off the list while it's under renovation into 2027. Kiwanis Park goes until midnight. Soleri Bridge Plaza never closes.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="rates">
+ <div class="wrap">
+  <div class="rates-head">
+   <div><h2>Rec center rates</h2>
+   <p class="sub">Every city rec center we checked, with the day pass and the cheapest room. Mark gets resident rates in Scottsdale. Everywhere else we pay non-resident. Observed means we read it on the city's own page or fee PDF.</p></div>
+   <div class="dayfilter"><span>Open on</span><div class="frow" id="dayPills" role="group" aria-label="Open on"></div></div>
+  </div>
+  <p class="count" id="rateCount"></p>
+  <div class="rates-wrap"><table class="rates"><thead><tr><th>Center</th><th>Day pass (res / non-res)</th><th>Cheapest room</th><th>Room rate (res / non-res)</th><th>Minimum</th><th id="closeHead">Closes weeknights</th><th>Source</th></tr></thead><tbody id="ratesBody"></tbody></table></div>
+ </div>
+</section>
+
+
+<script>
+const S = [
+  // INDOOR, priced
+  {n:"Eagles Community Center open gym", c:"Mesa", t:"Indoor", p:3, pl:"$3", pn:"adult drop-in", what:"Open gym evenings. Mon soccer, Tue/Fri basketball and volleyball, Wed basketball, Sat basketball and soccer, no open gym Thu. Fitness room open during open gym.", catch:"You share the floor with a pickup game. The separate dance studio room rents for about $18-120/hr depending on size.", contact:"828 E Broadway Rd · 480-644-5745 · eaglescommunitycenter@mesaaz.gov", url:"https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Recreational-Facilities/Eagles-Community-Center", q:"Eagles Community Center 828 E Broadway Rd Mesa AZ"},
+  {n:"Freestone Recreation Center", c:"Gilbert", t:"Indoor", p:3.5, pl:"$3.50", pn:"resident, noon-3 PM weekdays ($4.50 day pass)", what:"Day pass covers the gym and fitness areas. Open Mon-Fri 5:15 AM-10 PM, Sat 7 AM-9 PM, Sun 10 AM-5 PM.", catch:"We couldn't find the non-resident price. A day pass doesn't get you a private room.", contact:"1141 E Guadalupe Rd · recreation@gilbertaz.gov · rentals 480-503-6227", url:"https://www.gilbertaz.gov/departments/parks-and-recreation/recreation-centers-classes/freestone-recreation-center/passes-memberships", q:"Freestone Recreation Center Gilbert AZ"},
+  {n:"Tumbleweed Recreation Center", c:"Chandler", t:"Indoor", p:4, pl:"$4", pn:"resident, $6 non-resident", what:"Daily pass covers the fitness area and open gym.", catch:"It's a shared space. Ask the front desk if two people can practice.", contact:"745 E Germann Rd · trc@chandleraz.gov · 480-782-2909", url:"https://www.chandleraz.gov/explore/chandler-recreation/centers-and-facilities/tumbleweed-recreation-center/memberships", q:"Tumbleweed Recreation Center 745 E Germann Rd Chandler AZ"},
+  {n:"Eldorado Aquatic & Fitness Center", c:"Scottsdale", t:"Indoor", p:4, pl:"$4", pn:"resident, $6 non-resident", what:"Fitness center drop-in near Miller Rd and Oak St. The city's Cactus Pass is $40 for 10 visits for residents, $60 for non-residents. The 30-visit Cactus Pass is $96 for residents, so $3.20 a visit. It works at all four Scottsdale pools.", catch:"It's a fitness floor, not a studio. The park around it is torn up for lake and irrigation repairs, so parking might be fenced off. The center's Oct-Nov schedule says it's open.", contact:"2301 N Miller Rd · Aquatics@ScottsdaleAZ.gov · 480-312-2484", url:"https://www.scottsdaleaz.gov/aquatics/eldorado-pool", q:"Eldorado Aquatic and Fitness Center Scottsdale AZ"},
+  {n:"Club SAR", c:"Scottsdale", t:"Indoor", p:4, pl:"$4", pn:"resident, $6 non-resident", what:"City fitness center with a Barre Room and a Group Classes/Multi-use Room off the main floor, per the city's floor plan. Close to Scottsdale Rd and Camelback.", catch:"On a drop-in you're on the shared floor, so call and ask when the barre or multi-use room sits empty. Also ask if the Cactus Pass works here, since it's sold as a pool pass.", contact:"8055 E Camelback Rd · ClubSAR@ScottsdaleAZ.gov · 480-312-2669", url:"https://www.scottsdaleaz.gov/club-sar-fitness-center", q:"Club SAR Scottsdale AZ"},
+  {n:"Kiwanis Recreation Center", c:"Tempe", t:"Indoor", p:4, pl:"$4", pn:"fitness drop-in. Classrooms $30/hr", what:"Classrooms are about 20x28 ft and a flat $30/hr. It's open till 10 PM Mon-Thu, later than any other Tempe center.", catch:"Far south Tempe.", contact:"6111 S All America Way · 480-350-5201 · krcadmin@tempe.gov", url:"https://form.jotform.com/261265993585169", q:"Kiwanis Recreation Center Tempe AZ"},
+  {n:"Red Mountain Center", c:"Mesa", t:"Indoor", p:5, pl:"$5", pn:"day pass. Rooms $20-65/hr", what:"The activity room ($20-65/hr) is the cheapest private room with AC we found. The Mesquite Room has a hardwood floor and a stage, but it runs $75-225/hr. Open Mon-Fri 5:30 AM-9 PM.", catch:"Far east Mesa. You book rooms through an interest form, so it's not instant.", contact:"7550 E Adobe St · 480-644-4800 · parksresreg@mesaaz.gov", url:"https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Recreational-Facilities/Red-Mountain-Center", q:"Red Mountain Center 7550 E Adobe St Mesa AZ"},
+  {n:"Mesa Arts Center Dance Studio", c:"Mesa", t:"Indoor", p:900, pl:"Ask", pn:"rate not posted", what:"1,200 sq ft studio with a wood floor, mirrors and a barre, downtown Mesa.", catch:"Their rental terms say new requests take 6+ weeks.", contact:"rentals@mesaartscenter.com", url:"https://www.mesaartscenter.com/venue-details/29/dance-studio", q:"Mesa Arts Center 1 E Main St Mesa AZ"},
+  {n:"Westside Multi-Generational Center", c:"Tempe", t:"Indoor", p:10, pl:"$10", pn:"per hour, classroom, non-resident", what:"Classroom $5/hr resident, $10/hr non-resident. Rentals until 8:45 PM weekdays.", catch:"They don't post a minimum.", contact:"715 W 5th St · Alicia_Jerger@tempe.gov · 480-858-2465", url:"https://form.jotform.com/261094781474161", q:"Westside Multi-Generational Center Tempe AZ"},
+  {n:"Granite Reef Senior Center", c:"Scottsdale", t:"Indoor", p:30, pl:"$30", pn:"1 hr: $20 room + $10 booking fee", what:"The small room (201-500 sq ft) is $20/hr for anyone, no minimum, plus a $10 fee each time you book.", catch:"Business hours only, till 8 PM Mon-Thu. You pay in full when you book.", contact:"1700 N Granite Reef Rd · seniorservices@scottsdaleaz.gov · 480-312-1700", url:"https://www.scottsdaleaz.gov/seniors/services/rentals", q:"Granite Reef Senior Center Scottsdale AZ"},
+  {n:"Via Linda Senior Center", c:"Scottsdale", t:"Indoor", p:30, pl:"$30", pn:"1 hr: $20 room + $10 booking fee", what:"Same deal as Granite Reef. Small room is $20/hr, no minimum, $10 fee each booking.", catch:"Business hours only, till 8 PM Mon-Thu. It's in north Scottsdale, so it's a drive for both of us.", contact:"10440 E Via Linda · seniorservices@scottsdaleaz.gov · 480-312-5810", url:"https://www.scottsdaleaz.gov/seniors/services/rentals", q:"Via Linda Senior Center Scottsdale AZ"},
+  {n:"Clark Park Community Center", c:"Tempe", t:"Indoor", p:10, pl:"$10", pn:"per hour non-resident for the Palm or Ash room, 2-hour minimum", what:"Four rooms from 730 to 1,416 sq ft, and every one has Bluetooth speakers built in. Palm and Ash are the small ones, Cypress is the biggest.", catch:"2-hour minimum, so $20 a night. Rentals end by 8:30 PM Mon-Thu, and it books up fast.", contact:"1730 S Roosevelt St, Building A · clarkinfo@tempe.gov", url:"https://www.tempe.gov/government/community-services/community-recreation-centers/rentals-at-recreation-centers", q:"Clark Park Community Center Tempe AZ"},
+  {n:"Escalante Multi-Generational Center", c:"Tempe", t:"Indoor", p:1, pl:"$1", pn:"day pass (free facility membership). Classrooms $10/hr non-resident", what:"Classrooms $5/hr resident, $10/hr non-resident, no minimum during business hours. The Sano Multi-Purpose Room has mirrored walls, a dance floor and a speaker: $20/hr resident, $50/hr non-resident.", catch:"Rentals stop at 8:30 PM Mon-Thu.", contact:"2150 E Orange St · Jennifer_Gall@tempe.gov · 480-350-5805", url:"https://form.jotform.com/261055173540147", q:"Escalante Multi-Generational Center Tempe AZ"},
+  {n:"North Tempe Multi-Generational Center", c:"Tempe", t:"Indoor", p:1, pl:"$1", pn:"day pass (free facility membership). Rooms $10/hr non-resident", what:"Conference rooms and classrooms $5/hr resident, $10/hr non-resident. Closest Tempe center to Scottsdale.", catch:"Rooms are carpet. Rentals stop at 7:45 PM.", contact:"1555 N Bridalwreath St · tj_nemecek@tempe.gov", url:"https://form.jotform.com/261045330593149", q:"North Tempe Multi-Generational Center Tempe AZ"},
+  {n:"Pyle Adult Recreation Center", c:"Tempe", t:"Indoor", p:2, pl:"$2", pn:"fitness drop-in. Rooms $10/hr non-resident, 2 hr min", what:"Rooms $5/hr resident, $10/hr non-resident, so a 2-hour booking is $20 for us. 18+ only.", catch:"The mirrored Dance Room can't be rented. Book 2+ weeks ahead. Closes 8:30 PM Mon-Thu.", contact:"655 E Southern Ave · Pyle_Rentals@tempe.gov", url:"https://form.jotform.com/261095935293162", q:"Pyle Adult Recreation Center Tempe AZ"},
+
+
+  // OUTDOOR, free
+  {n:"Soleri Bridge Plaza", c:"Scottsdale", t:"Outdoor", p:0, pl:"Free", pn:"open 24/7", what:"22,000 sq ft paved plaza with shade and seating on the Scottsdale Waterfront canal.", catch:"Dark and quiet at night. Bring a light if the plaza lights are off.", contact:"4420 N Scottsdale Rd", url:"https://www.yelp.com/biz/soleri-bridge-and-plaza-scottsdale-2", q:"Soleri Bridge and Plaza Scottsdale AZ"},
+  {n:"Scottsdale Civic Center", c:"Scottsdale", t:"Outdoor", p:0, pl:"Free", pn:"6 AM-10:30 PM", what:"Renovated Old Town park. The East Bowl band shell has a covered, paved stage facing a lawn, with a smaller West Bowl to the north.", catch:"Concerts and events take the stage some nights. Check the Civic Center calendar first.", contact:"", url:"https://www.scottsdaleaz.gov/parks/find-a-park/scottsdale-civic-center", q:"Scottsdale Civic Center Scottsdale AZ"},
+  {n:"SkySong plaza", c:"Scottsdale", t:"Outdoor", p:0, pl:"Free", pn:"hours not checked", what:"Large paved plaza under the shade sail at Scottsdale Rd and McDowell.", catch:"It's private property and we haven't checked it out, so security might move you along.", contact:"", url:"https://www.google.com/maps/search/?api=1&query=SkySong%20Scottsdale%20AZ", q:"SkySong Scottsdale AZ"},
+  {n:"Kiwanis Park", c:"Tempe", t:"Outdoor", p:0, pl:"Free", pn:"6 AM-midnight", what:"Big lit park around the Kiwanis Rec Center, with ramadas on concrete pads.", catch:"Groups can reserve the ramadas.", contact:"Mill Ave and All America Way", url:"https://www.tempe.gov/Home/Components/FacilityDirectory/FacilityDirectory/120/3542", q:"Kiwanis Park Tempe AZ"},
+  {n:"Rio Salado circle at Tempe Arts Park", c:"Tempe", t:"Outdoor", p:0, pl:"Free", pn:"park hours", what:"Big smooth concrete circle on the Rio Salado Path, right next to the Tempe Center for the Arts on Town Lake. Skaters use it at sunset.", catch:"The Arts Center building closes at 5 PM, but the path stays open with the park.", contact:"", url:"https://www.downtowntempe.com/go/tempe-arts-park", q:"33.43211,-111.94650"},
+  {n:"ASU Tempe campus plazas", c:"Tempe", t:"Outdoor", p:0, pl:"Free", pn:"campus open", what:"Lit paved plazas around Gammage and Palm Walk. Dancers practice on campus at night.", catch:"We haven't checked the campus rules.", contact:"", url:"https://www.google.com/maps/search/?api=1&query=ASU%20Gammage%20Tempe%20AZ", q:"ASU Gammage Tempe AZ"},
+  {n:"Mesa Arts Center Shadow Walk", c:"Mesa", t:"Outdoor", p:0, pl:"Free", pn:"night access unconfirmed", what:"704 ft shaded paved walkway, lit at night, with informal performance areas.", catch:"The building's open Tue-Sat noon-5 PM. Make sure the walkway's open after dark.", contact:"Main St and Center St", url:"https://www.architectmagazine.com/technology/lighting/shadow-walk-mesa-ariz_o", q:"Mesa Arts Center Mesa AZ"},
+  {n:"Pioneer Park", c:"Mesa", t:"Outdoor", p:0, pl:"Free", pn:"park hours", what:"Downtown Mesa park, recently rebuilt, with a central plaza.", catch:"Families hit the splash pad early evening, so go later.", contact:"", url:"https://www.vortex-intl.com/projects/pioneer-park/", q:"Pioneer Park Mesa AZ"},
+  {n:"Riverview Park", c:"Mesa", t:"Outdoor", p:0, pl:"Free", pn:"sunrise-10 PM", what:"Miles of paved trails around a lake at Dobson and Rio Salado.", catch:"Find a flat paved patch big enough to turn.", contact:"", url:"https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Riverview-Park", q:"Riverview Park Mesa AZ"},
+  {n:"Water Tower Plaza", c:"Gilbert", t:"Outdoor", p:0, pl:"Free", pn:"5:30 AM-10 PM", what:"Paved plaza in the Heritage District with foot traffic and restaurants nearby.", catch:"Artwalk uses it 1st and 3rd Saturday mornings, Oct-Mar.", contact:"45 W Page Ave", url:"https://www.gilbertaz.gov/departments/parks-and-recreation/parks-information/parks/water-tower-park", q:"Gilbert Water Tower Plaza 45 W Page Ave"},
+  {n:"Gilbert Regional Park", c:"Gilbert", t:"Outdoor", p:0, pl:"Free", pn:"5:30 AM-10 PM", what:"New park with LED-lit areas and paved paths.", catch:"Far south Gilbert. It's a long drive from Scottsdale.", contact:"3005 E Queen Creek Rd", url:"https://www.gilbertaz.gov/departments/parks-and-recreation/gilbert-s-new-regional-park", q:"Gilbert Regional Park 3005 E Queen Creek Rd"},
+  {n:"Freestone Park", c:"Gilbert", t:"Outdoor", p:0, pl:"Free", pn:"5:30 AM-10 PM", what:"Large park next to the Freestone Rec Center.", catch:"We haven't checked if the paved areas are lit.", contact:"1045 E Juniper Rd", url:"https://www.gilbertaz.gov/freestone-park", q:"Freestone Park 1045 E Juniper Rd Gilbert AZ"},
+  {n:"Tumbleweed Park", c:"Chandler", t:"Outdoor", p:0, pl:"Free", pn:"6 AM-10:30 PM", what:"About 200 acres around the Tumbleweed Rec Center.", catch:"We haven't checked for paved, lit spots. Try near the rec center.", contact:"", url:"https://www.chandleraz.gov/explore/chandler-parks/guide/tumbleweed-park", q:"Tumbleweed Park Chandler AZ"}
+];
+
+const IMG = {
+"mesa-arts-center-shadow-walk": [
+"img/mesa-arts-center-shadow-walk.jpg",
+"img/mesa-arts-center-shadow-walk-c0.jpg",
+"img/mesa-arts-center-shadow-walk-c1.jpg"
+],
+"pioneer-park": [
+"img/pioneer-park.jpg",
+"img/pioneer-park-c0.jpg"
+],
+"tumbleweed-park": [
+"img/tumbleweed-park.jpg"
+],
+"scottsdale-civic-center": [
+"img/scottsdale-civic-center.jpg",
+"img/scottsdale-civic-center-2.jpg"
+],
+"skysong-plaza": [
+"img/skysong-plaza.jpg",
+"img/skysong-plaza-c6.jpg",
+"img/skysong-plaza-c1.jpg"
+],
+"kiwanis-park": [
+"img/kiwanis-park.jpg",
+"img/kiwanis-park-c5.jpg",
+"img/kiwanis-park-c6.jpg"
+],
+"rio-salado-circle-at-tempe-arts-park": [
+"img/rio-salado-circle-13.jpg",
+"img/rio-salado-circle-10.jpg",
+"img/rio-salado-circle-15.jpg",
+"img/tempe-arts-park-tempe-center-for-the-art.jpg",
+"img/tempe-arts-park-tempe-center-for-the-art-c1.jpg",
+"img/tempe-arts-park-tempe-center-for-the-art-c6.jpg"
+],
+"asu-tempe-campus-plazas": [
+"img/asu-tempe-campus-plazas.jpg"
+],
+"soleri-bridge-plaza": [
+"img/soleri-bridge-plaza-c0.jpg",
+"img/soleri-bridge-plaza-c1.jpg"
+],
+"water-tower-plaza": [
+"img/water-tower-plaza-c5.jpg",
+"img/water-tower-plaza-c0.jpg"
+],
+"eagles-community-center-open-gym": [
+"img/eagles-community-center-open-gym.jpg"
+],
+"red-mountain-center": [
+"img/red-mountain-center.jpg"
+],
+"eldorado-aquatic-fitness-center": [
+"img/eldorado-aquatic-fitness-center.jpg"
+],
+"granite-reef-senior-center": [
+"img/granite-reef-senior-center.jpg"
+],
+"tumbleweed-recreation-center": [
+"img/tumbleweed-recreation-center.jpg"
+],
+"via-linda-senior-center": [
+"img/via-linda-senior-center.jpg"
+],
+"kiwanis-recreation-center": [
+"img/kiwanis-recreation-center.jpg"
+],
+"north-tempe-multi-generational-center": [
+"img/north-tempe-multi-generational-center.jpg"
+],
+"escalante-multi-generational-center": [
+"img/escalante-front.jpg",
+"img/escalante-multi-generational-center.jpg"
+],
+"westside-multi-generational-center": [
+"img/westside-multi-generational-center.jpg"
+],
+"freestone-recreation-center": [
+"img/freestone-recreation-center.jpg"
+],
+"pyle-adult-recreation-center": [
+"img/pyle-adult-recreation-center.jpg",
+"img/pyle-adult-recreation-center-2.jpg"
+],
+"club-sar": [
+"img/club-sar.jpg",
+"img/club-sar-2.jpg"
+]
+};
+const PICKS = [
+ ["Eagles Community Center open gym","Cheapest with AC"],
+ ["Soleri Bridge Plaza","Free, open 24/7"]
+];
+
+const RATES = [{"city": "Scottsdale", "center": "Eldorado Aquatic & Fitness Center", "day_pass_res": "$4", "day_pass_nonres": "$6", "room_name": "not posted (aquatic reservable spaces are summer-only)", "room_rate_res": "not posted", "room_rate_nonres": "not posted", "room_min_hours": "not posted", "closes_weeknight": "not posted (pool/fitness hours vary month to month per city page)", "sources": [{"url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/park---recreation/find-a-park-maps/community-services-rates.pdf", "tag": "Observed"}, {"url": "https://www.scottsdaleaz.gov/aquatics/eldorado-pool", "tag": "Observed"}, {"url": "https://www.scottsdaleaz.gov/parks/reservations", "tag": "Observed"}]}, {"city": "Scottsdale", "center": "Eldorado Community Center (Eldorado Park)", "day_pass_res": "$5/year open gym card (gym only)", "day_pass_nonres": "$5/year open gym card (residency split not posted)", "room_name": "Indoor rooms (names not posted)", "room_rate_res": "$5-60/hr by size band", "room_rate_nonres": "$5-60/hr by size band", "room_min_hours": "not posted", "closes_weeknight": "8 p.m. (Mon-Fri 9 a.m.-8 p.m.)", "sources": [{"url": "https://www.scottsdaleaz.gov/parks/find-a-park/eldorado-park", "tag": "Observed"}, {"url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/park---recreation/find-a-park-maps/community-services-rates.pdf", "tag": "Observed"}, {"url": "https://www.scottsdaleaz.gov/parks/reservations", "tag": "Observed"}]}, {"city": "Scottsdale", "center": "Club SAR Fitness Center", "day_pass_res": "$4", "day_pass_nonres": "$6", "room_name": "not posted (Club SAR not on the Facility Booking indoor list)", "room_rate_res": "not posted", "room_rate_nonres": "not posted", "room_min_hours": "not posted", "closes_weeknight": "9 p.m. Mon-Thu, 8 p.m. Fri", "sources": [{"url": "https://www.scottsdaleaz.gov/club-sar-fitness-center", "tag": "Observed"}, {"url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/park---recreation/find-a-park-maps/community-services-rates.pdf", "tag": "Observed"}]}, {"city": "Scottsdale", "center": "Cactus Pool & Fitness Center (Cactus Park)", "day_pass_res": "$4", "day_pass_nonres": "$6", "room_name": "not posted", "room_rate_res": "not posted", "room_rate_nonres": "not posted", "room_min_hours": "not posted", "closes_weeknight": "not posted", "sources": [{"url": "https://www.scottsdaleaz.gov/aquatics/cactus-pool", "tag": "Observed"}, {"url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/park---recreation/find-a-park-maps/community-services-rates.pdf", "tag": "Observed"}, {"url": "https://www.scottsdaleaz.gov/parks/reservations", "tag": "Observed"}]}, {"city": "Scottsdale", "center": "Chaparral Community Center / Chaparral Pool", "day_pass_res": "$4 (pool/fitness, summer season only)", "day_pass_nonres": "$6 (pool/fitness, summer season only)", "room_name": "Indoor rooms (names not posted)", "room_rate_res": "$5-60/hr by size band", "room_rate_nonres": "$5-60/hr by size band", "room_min_hours": "not posted", "closes_weeknight": "7 p.m. (community center Mon-Fri 9 a.m.-7 p.m.)", "sources": [{"url": "https://www.scottsdaleaz.gov/parks/find-a-park/chaparral-park", "tag": "Observed"}, {"url": "https://www.scottsdaleaz.gov/aquatics/chaparral-pool", "tag": "Observed"}, {"url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/park---recreation/find-a-park-maps/community-services-rates.pdf", "tag": "Observed"}, {"url": "https://www.scottsdaleaz.gov/parks/reservations", "tag": "Observed"}]}, {"city": "Scottsdale", "center": "Paiute Neighborhood Center", "day_pass_res": "not posted", "day_pass_nonres": "not posted", "room_name": "not posted (rent by calling 480-312-2529)", "room_rate_res": "not posted", "room_rate_nonres": "not posted", "room_min_hours": "not posted", "closes_weeknight": "5 p.m. (Mon-Fri 8 a.m.-5 p.m.)", "sources": [{"url": "https://www.scottsdaleaz.gov/paiute-neighborhood-center", "tag": "Observed"}, {"url": "https://www.scottsdaleaz.gov/parks/reservations", "tag": "Observed"}]}, {"city": "Scottsdale", "center": "Vista del Camino Community Center", "day_pass_res": "not posted", "day_pass_nonres": "not posted", "room_name": "Indoor rooms via Facility Booking (names not posted)", "room_rate_res": "$5-60/hr by size band", "room_rate_nonres": "$5-60/hr by size band", "room_min_hours": "not posted", "closes_weeknight": "5 p.m. (Mon-Fri 8 a.m.-5 p.m.)", "sources": [{"url": "https://www.scottsdaleaz.gov/vista-del-camino-community-center", "tag": "Observed"}, {"url": "https://www.scottsdaleaz.gov/parks/reservations", "tag": "Observed"}, {"url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/park---recreation/find-a-park-maps/community-services-rates.pdf", "tag": "Observed"}]}, {"city": "Scottsdale", "center": "Granite Reef Senior Center", "day_pass_res": "not posted", "day_pass_nonres": "not posted", "room_name": "Small room (201-500 sq ft, cap 30)", "room_rate_res": "$20/hr", "room_rate_nonres": "$20/hr", "room_min_hours": "none (\"no minimum hourly requirements\")", "closes_weeknight": "8 p.m. Mon-Thu, 5 p.m. Fri", "sources": [{"url": "https://www.scottsdaleaz.gov/seniors/granite-reef-senior-center", "tag": "Observed"}, {"url": "https://www.scottsdaleaz.gov/seniors/services/rentals", "tag": "Observed"}]}, {"city": "Scottsdale", "center": "Via Linda Senior Center", "day_pass_res": "not posted", "day_pass_nonres": "not posted", "room_name": "Small room (201-500 sq ft, cap 30)", "room_rate_res": "$20/hr", "room_rate_nonres": "$20/hr", "room_min_hours": "none", "closes_weeknight": "8 p.m. Mon-Thu, 5 p.m. Fri", "sources": [{"url": "https://www.scottsdaleaz.gov/seniors/via-linda-senior-center", "tag": "Observed"}, {"url": "https://www.scottsdaleaz.gov/seniors/services/rentals", "tag": "Observed"}]}, {"city": "Scottsdale", "center": "McDowell Mountain Ranch Aquatic & Fitness Center", "day_pass_res": "$4 (lap swim + fitness)", "day_pass_nonres": "$6 (lap swim + fitness)", "room_name": "Meeting Room (via Facility Booking)", "room_rate_res": "$5-60/hr by size band", "room_rate_nonres": "$5-60/hr by size band", "room_min_hours": "not posted", "closes_weeknight": "not posted", "sources": [{"url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/park---recreation/find-a-park-maps/community-services-rates.pdf", "tag": "Observed"}, {"url": "https://www.scottsdaleaz.gov/parks/reservations", "tag": "Observed"}]}, {"city": "Tempe", "center": "Clark Park Community Center", "day_pass_res": "not posted", "day_pass_nonres": "not posted", "room_name": "Palm or Ash classroom (730-766 sq ft, Bluetooth speakers)", "room_rate_res": "$5/hr", "room_rate_nonres": "$10/hr", "room_min_hours": "2 hours", "closes_weeknight": "rentals end 8:30 p.m. Mon-Thu, closes 5 p.m. Fri", "sources": [{"url": "https://www.tempe.gov/government/community-services/community-recreation-centers/rentals-at-recreation-centers", "tag": "[Observed]"}, {"url": "https://form.jotform.com/260965427381060", "tag": "Reported"}]}, {"city": "Tempe", "center": "Kiwanis Recreation Center", "day_pass_res": "$4 (fitness center drop-in)", "day_pass_nonres": "$4 (no residency split posted)", "room_name": "Classroom A or B (~20'x28', cap 25) or Observation Room", "room_rate_res": "$30/hr", "room_rate_nonres": "$30/hr", "room_min_hours": "not posted", "closes_weeknight": "10 p.m. Mon-Thu, 7 p.m. Fri (fitness center 9:30 p.m.)", "sources": [{"url": "https://www.tempe.gov/government/community-services/community-recreation-centers/kiwanis-recreation-center", "tag": "Observed"}, {"url": "https://www.tempe.gov/government/community-services/community-recreation-centers/fitness-centers", "tag": "Observed"}, {"url": "https://www.tempe.gov/government/community-services/community-recreation-centers/rentals-at-recreation-centers", "tag": "Observed"}, {"url": "https://form.jotform.com/261265993585169", "tag": "Observed"}]}, {"city": "Tempe", "center": "Escalante Multi-Generational Center", "day_pass_res": "$1 fitness drop-in (free facility membership required)", "day_pass_nonres": "$1 (no residency split posted)", "room_name": "Amistad / Bravo / Brio / La Paz classrooms or Conference Room (cap 15-25)", "room_rate_res": "$5/hr", "room_rate_nonres": "$10/hr", "room_min_hours": "none during business hours; 2-hour minimum outside business hours ($80/hr)", "closes_weeknight": "9 p.m. Mon-Thu, 8 p.m. Fri (rentals to 8:30 p.m. Mon-Thu, 7:30 p.m. Fri)", "sources": [{"url": "https://www.tempe.gov/government/community-services/community-recreation-centers/escalante-multi-generational-center", "tag": "Observed"}, {"url": "https://www.tempe.gov/government/community-services/community-recreation-centers/rentals-at-recreation-centers", "tag": "Observed"}, {"url": "https://www.tempe.gov/government/community-services/community-recreation-centers/fitness-centers", "tag": "Observed"}, {"url": "https://form.jotform.com/261055173540147", "tag": "Observed"}]}, {"city": "Tempe", "center": "North Tempe Multi-Generational Center", "day_pass_res": "$1 single day pass (fitness + gym programs; free facility membership required)", "day_pass_nonres": "$1 (no residency split posted)", "room_name": "Conference Room (Large/Small) or Palo Verde / Sisso classroom (cap 25)", "room_rate_res": "$5/hr", "room_rate_nonres": "$10/hr", "room_min_hours": "not posted", "closes_weeknight": "8 p.m. Mon-Fri (rentals to 7:45 p.m.)", "sources": [{"url": "https://www.tempe.gov/government/community-services/community-recreation-centers/north-tempe-multi-generational-center", "tag": "Observed"}, {"url": "https://www.tempe.gov/government/community-services/community-recreation-centers/north-tempe-multi-generational-center/facility-information", "tag": "Observed"}, {"url": "https://www.tempe.gov/government/community-services/community-recreation-centers/rentals-at-recreation-centers", "tag": "Observed"}, {"url": "https://form.jotform.com/261045330593149", "tag": "Observed"}]}, {"city": "Tempe", "center": "Pyle Adult Recreation Center (18+)", "day_pass_res": "$2 fitness single-day drop-in", "day_pass_nonres": "$2 (no residency split posted)", "room_name": "Conference Room (cap 20) or Payson / Prescott / Tucson / Yuma room (cap 30)", "room_rate_res": "$5/hr", "room_rate_nonres": "$10/hr", "room_min_hours": "2 hours for all rentals", "closes_weeknight": "8:30 p.m. Mon-Thu, 4:30 p.m. Fri", "sources": [{"url": "https://www.tempe.gov/government/community-services/community-recreation-centers/pyle-adult-recreation-center/facility-information", "tag": "Observed"}, {"url": "https://www.tempe.gov/government/community-services/community-recreation-centers/rentals-at-recreation-centers", "tag": "Observed"}, {"url": "https://form.jotform.com/261095935293162", "tag": "Observed"}, {"url": "https://www.tempe.gov/home/showpublisheddocument/14737/639263537132800000", "tag": "Observed"}, {"url": "https://www.tempe.gov/government/community-services/community-recreation-centers/fitness-centers", "tag": "Observed"}]}, {"city": "Tempe", "center": "Westside Multi-Generational Center", "day_pass_res": "not posted", "day_pass_nonres": "not posted", "room_name": "Classroom (whiteboard, sink)", "room_rate_res": "$5/hr", "room_rate_nonres": "$10/hr", "room_min_hours": "2 hours (all reservations)", "closes_weeknight": "not posted (rentals to 8:45 p.m. Mon-Fri)", "sources": [{"url": "https://www.tempe.gov/government/community-services/community-recreation-centers/rentals-at-recreation-centers", "tag": "Observed"}, {"url": "https://form.jotform.com/261094781474161", "tag": "Observed"}]}, {"city": "Mesa", "center": "Red Mountain Center (multigenerational)", "day_pass_res": "$5 adult (18-54)", "day_pass_nonres": "$5 (no residency split posted)", "room_name": "Activity Room / Conference Room", "room_rate_res": "$20-65/hr (range only)", "room_rate_nonres": "$20-65/hr (range only)", "room_min_hours": "not posted", "closes_weeknight": "9 p.m. Mon-Fri", "sources": [{"url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Recreational-Facilities/Red-Mountain-Center", "tag": "Observed"}, {"url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Facility-Reservations", "tag": "Observed"}, {"url": "https://www.mesaaz.gov/files/assets/public/v/9/government/omb/fees-charges/parks-recreational-revenue-fees.pdf", "tag": "Observed"}]}, {"city": "Mesa", "center": "Eagles Community Center", "day_pass_res": "$3 adult open gym drop-in", "day_pass_nonres": "$3 (no residency split posted)", "room_name": "Dance Studio / Classrooms / Conference Room", "room_rate_res": "not posted (fee PDF band: small $18-60/hr)", "room_rate_nonres": "not posted", "room_min_hours": "not posted", "closes_weeknight": "8:30 p.m. Mon-Fri", "sources": [{"url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Recreational-Facilities/Eagles-Community-Center", "tag": "Observed"}, {"url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Facility-Reservations", "tag": "Observed"}, {"url": "https://www.mesaaz.gov/files/assets/public/v/9/government/omb/fees-charges/parks-recreational-revenue-fees.pdf", "tag": "Observed"}]}, {"city": "Mesa", "center": "Jefferson Recreation Center", "day_pass_res": "not posted (no drop-in; after-school programs until 5:30 p.m.)", "day_pass_nonres": "not posted", "room_name": "Classrooms / Gymnasium", "room_rate_res": "not posted (fee PDF band: small $18-60/hr)", "room_rate_nonres": "not posted", "room_min_hours": "not posted", "closes_weeknight": "not posted", "sources": [{"url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Recreational-Facilities/Jefferson-Rec-Center", "tag": "Observed"}, {"url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Facility-Reservations", "tag": "Observed"}, {"url": "https://www.mesaaz.gov/files/assets/public/v/9/government/omb/fees-charges/parks-recreational-revenue-fees.pdf", "tag": "Observed"}]}, {"city": "Mesa", "center": "Webster Recreation Center", "day_pass_res": "$2-8 (fee PDF range for Mesa rec centers)", "day_pass_nonres": "$2-8 (range)", "room_name": "Classrooms / Gymnasium", "room_rate_res": "not posted (fee PDF band: small $18-60/hr)", "room_rate_nonres": "not posted", "room_min_hours": "not posted", "closes_weeknight": "not posted", "sources": [{"url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Facility-Reservations", "tag": "Observed"}, {"url": "https://www.mesaaz.gov/files/assets/public/v/9/government/omb/fees-charges/parks-recreational-revenue-fees.pdf", "tag": "Observed"}]}, {"city": "Mesa", "center": "Broadway Recreation Center", "day_pass_res": "not posted (rental only, no public hours)", "day_pass_nonres": "not posted", "room_name": "Full-court gym only", "room_rate_res": "$115/hr", "room_rate_nonres": "$115/hr", "room_min_hours": "not posted", "closes_weeknight": "not posted", "sources": [{"url": "https://www.arizonadisabledsports.com/specsratesrules", "tag": "Observed"}, {"url": "https://www.arizonadisabledsports.com/specsratesrules", "tag": "Reported"}]}, {"city": "Mesa", "center": "Washington Activity Center", "day_pass_res": "not posted", "day_pass_nonres": "not posted", "room_name": "not posted", "room_rate_res": "not posted", "room_rate_nonres": "not posted", "room_min_hours": "not posted", "closes_weeknight": "9 p.m. Mon-Thu, 6 p.m. Fri", "sources": [{"url": "https://www.yelp.com/biz/washington-activity-center-mesa", "tag": "Reported"}]}, {"city": "Mesa", "center": "Mesa senior centers (Aster Senior Center at Mesa Downtown, 247 N Macdonald)", "day_pass_res": "not posted", "day_pass_nonres": "not posted", "room_name": "not posted", "room_rate_res": "not posted", "room_rate_nonres": "not posted", "room_min_hours": "not posted", "closes_weeknight": "not posted", "sources": [{"url": "https://www.asteraz.org/services/seniorcenters.html", "tag": "Reported"}, {"url": "https://www.fsl.org/locations/mesa-active-adult-center/", "tag": "Reported"}]}, {"city": "Gilbert", "center": "Freestone Recreation Center", "day_pass_res": "$4.50 adult ($3.50 non-prime 12-3 p.m. weekdays)", "day_pass_nonres": "$6.75 adult", "room_name": "Aerobics Room B (800 sq ft, wood floor)", "room_rate_res": "$25/hr", "room_rate_nonres": "$31.25/hr", "room_min_hours": "2 hours posted, 1 hour allowed on request", "closes_weeknight": "10 p.m. Mon-Fri", "sources": [{"url": "https://www.gilbertaz.gov/departments/parks-and-recreation/parks-facility-and-sport-field-rentals/recreation-centers-room-rentals", "tag": "Observed"}, {"url": "https://www.gilbertaz.gov/departments/parks-and-recreation/recreation-centers-classes/freestone-recreation-center/passes-memberships", "tag": "Observed"}]}, {"city": "Gilbert", "center": "Gilbert Community Center", "day_pass_res": "not posted", "day_pass_nonres": "not posted", "room_name": "Classroom (700 sf) or Pine Room (630 sf, wood floor)", "room_rate_res": "$30/hr", "room_rate_nonres": "$37.50/hr", "room_min_hours": "2 hours", "closes_weeknight": "6 p.m. Mon-Thu, 5 p.m. Fri", "sources": [{"url": "https://www.gilbertaz.gov/departments/parks-and-recreation/parks-facility-and-sport-field-rentals/recreation-centers-room-rentals", "tag": "Observed"}]}, {"city": "Gilbert", "center": "McQueen Park Activity Center", "day_pass_res": "not posted", "day_pass_nonres": "not posted", "room_name": "Classroom (660-780 sf, 4 available)", "room_rate_res": "$30/hr", "room_rate_nonres": "$37.50/hr", "room_min_hours": "2 hours", "closes_weeknight": "9 p.m. Mon-Fri", "sources": [{"url": "https://www.gilbertaz.gov/departments/parks-and-recreation/parks-facility-and-sport-field-rentals/recreation-centers-room-rentals", "tag": "Observed"}]}, {"city": "Gilbert", "center": "Southeast Regional Library rooms", "day_pass_res": "n/a", "day_pass_nonres": "n/a", "room_name": "Conference Room A (Alcott) or B (Twain), 700 sf", "room_rate_res": "$55/hr", "room_rate_nonres": "$63.75/hr", "room_min_hours": "2 hours", "closes_weeknight": "not posted (rental hours to midnight)", "sources": [{"url": "https://www.gilbertaz.gov/departments/parks-and-recreation/parks-facility-and-sport-field-rentals/recreation-centers-room-rentals", "tag": "Observed"}]}, {"city": "Chandler", "center": "Tumbleweed Recreation Center", "day_pass_res": "$4 adult (20-54)", "day_pass_nonres": "$6 adult", "room_name": "Meeting Room (400 sf, cap 15)", "room_rate_res": "$25/hr", "room_rate_nonres": "$34/hr", "room_min_hours": "not posted for TRC (Community Center and Nature Center state 2 hours)", "closes_weeknight": "8 p.m. Mon-Fri", "sources": [{"url": "https://www.chandleraz.gov/sites/default/files/departments/parks-and-recreation/City-of-Chander-Rental-Fees-TRC-Mar2025.pdf", "tag": "Observed"}, {"url": "https://www.chandleraz.gov/explore/chandler-recreation/centers-and-facilities/tumbleweed-recreation-center/memberships", "tag": "Observed"}, {"url": "https://www.chandleraz.gov/explore/chandler-recreation/centers-and-facilities/tumbleweed-recreation-center", "tag": "Observed"}, {"url": "https://www.chandleraz.gov/explore/chandler-recreation/centers-and-facilities/parties-and-rentals", "tag": "Observed"}]}, {"city": "Chandler", "center": "Chandler Community Center", "day_pass_res": "not posted", "day_pass_nonres": "not posted", "room_name": "Classroom 101 (cap 25)", "room_rate_res": "$25/hr", "room_rate_nonres": "$34/hr", "room_min_hours": "2 hours", "closes_weeknight": "7 p.m. Mon-Thu, 5 p.m. Fri", "sources": [{"url": "https://www.chandleraz.gov/sites/default/files/departments/parks-and-recreation/City-of-Chander-Rental-Fees-CC-Mar2025.pdf", "tag": "Observed"}, {"url": "https://www.chandleraz.gov/explore/chandler-recreation/centers-and-facilities/parties-and-rentals", "tag": "Observed"}, {"url": "https://www.chandleraz.gov/explore/chandler-recreation/centers-and-facilities/chandler-community-center", "tag": "Observed"}]}, {"city": "Chandler", "center": "Snedigar Recreation Center", "day_pass_res": "not posted", "day_pass_nonres": "not posted", "room_name": "not posted", "room_rate_res": "not posted", "room_rate_nonres": "not posted", "room_min_hours": "not posted", "closes_weeknight": "not posted (open only for programs)", "sources": [{"url": "https://www.chandleraz.gov/explore/chandler-recreation/centers-and-facilities/snedigar-recreation-center", "tag": "Observed"}]}, {"city": "Chandler", "center": "Chandler Nature Center (formerly Environmental Education Center)", "day_pass_res": "free drop-in programs (no day pass)", "day_pass_nonres": "free drop-in programs", "room_name": "Jackrabbit (classroom cap 24)", "room_rate_res": "$40/hr", "room_rate_nonres": "$54/hr", "room_min_hours": "2 hours", "closes_weeknight": "7 p.m. Mon-Thu, 5 p.m. Fri", "sources": [{"url": "https://www.chandleraz.gov/explore/chandler-recreation/centers-and-facilities/parties-and-rentals", "tag": "Observed"}, {"url": "https://www.chandleraz.gov/explore/chandler-recreation/centers-and-facilities/chandler-nature-center", "tag": "Observed"}]}];
+// Places Mark has emailed or called, with the date. Add a line when one goes out.
+const CONTACTED={"Escalante Multi-Generational Center": "10-6", "North Tempe Multi-Generational Center": "10-6", "Pyle Adult Recreation Center": "10-6", "Westside Multi-Generational Center": "10-6", "Clark Park Community Center": "10-6", "Kiwanis Recreation Center": "10-6", "Red Mountain Center": "10-6", "Eagles Community Center open gym": "10-6", "Freestone Recreation Center": "10-6", "Tumbleweed Recreation Center": "10-6", "Granite Reef Senior Center": "10-6", "Via Linda Senior Center": "10-6", "Eldorado Aquatic & Fitness Center": "10-6", "Mesa Arts Center Dance Studio": "10-6", "Club SAR": "10-6"};
+// Places with an email drafted in Gmail but not sent yet.
+const DRAFTED=new Set([]);
+const DECLINED=new Set(["Tumbleweed Recreation Center","Eldorado Aquatic & Fitness Center"]);
+const stamp=s=>DECLINED.has(s.n)?`<span class="stamp no">No</span>`:CONTACTED[s.n]?`<span class="stamp">Contacted ${esc(CONTACTED[s.n])}</span>`:(DRAFTED.has(s.n)?`<span class="stamp draft">Draft ready</span>`:"");
+const TYPES=["All","Indoor","Outdoor","Rec center"];
+const REC=new Set(["Clark Park Community Center","Eagles Community Center open gym","Freestone Recreation Center","Tumbleweed Recreation Center","Eldorado Aquatic & Fitness Center","Club SAR","Kiwanis Recreation Center","Red Mountain Center","Escalante Multi-Generational Center","North Tempe Multi-Generational Center","Pyle Adult Recreation Center","Westside Multi-Generational Center","Granite Reef Senior Center","Via Linda Senior Center"]);
+const typeOk=s=>type==="All"||(type==="Rec center"?REC.has(s.n):s.t===type);
+const CITIES=["Scottsdale","Tempe","Mesa","Gilbert","Chandler"];
+const PIN={"ASU Tempe campus plazas":1,"Scottsdale Civic Center":2}, rank=s=>PIN[s.n]||(REC.has(s.n)?3:99);
+let type="All", cities=new Set(CITIES), sort="price";
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const slug=n=>n.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,40).replace(/-$/,"");
+const mapUrl=q=>"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(q);
+const pickLabel=Object.fromEntries(PICKS);
+
+function card(s){
+ const img=IMG[slug(s.n)]||[], top=pickLabel[s.n];
+ const cls="card"+(s.p===0?" free":"")+(top?" top":"");
+ const ph=img.length
+  ? `<div class="ph rot">${img.map((u,k)=>`<img src="${u}" alt="${esc(s.n)}" loading="lazy"${k?"":` class="show"`}>`).join("")}<span class="price">${esc(s.pl)}</span>${top?`<span class="ptag">${esc(top)}</span>`:""}${stamp(s)}</div>`
+  : `<div class="ph none" data-city="${esc(s.c)}"><span class="price">${esc(s.pl)}</span>${top?`<span class="ptag">${esc(top)}</span>`:""}${stamp(s)}</div>`;
+ return `<article class="${cls}">${ph}
+  <div class="body">
+   <span class="kd">${esc(s.c)} / ${esc(s.t)}</span>
+   <h3>${esc(s.n)}</h3>
+   <span class="pn">${esc(s.pn)}</span>
+   <p class="what">${esc(s.what)}</p>
+   <p class="catch">${esc(s.catch)}</p>
+   ${s.contact?`<p class="ct">${esc(s.contact)}</p>`:""}
+   <div class="links"><a href="${esc(s.url)}" target="_blank" rel="noopener">Info</a>${s.q?`<a href="${mapUrl(s.q)}" target="_blank" rel="noopener">Map</a>`:""}</div>
+  </div></article>`;
+}
+function btns(el,items,on,tap){
+ el.innerHTML=items.map(v=>`<button type="button" class="f" aria-pressed="${on(v)}" data-v="${esc(v)}">${esc(v)}</button>`).join("");
+ el.onclick=e=>{const b=e.target.closest("button"); if(b) tap(b.dataset.v)};
+}
+function render(){
+ btns(document.getElementById("types"),TYPES,v=>v===type,v=>{type=v;render()});
+ btns(document.getElementById("cities"),CITIES,v=>cities.has(v),v=>{
+  if(cities.size===CITIES.length) cities=new Set([v]);
+  else if(cities.has(v)){cities.delete(v); if(!cities.size) cities=new Set(CITIES)}
+  else cities.add(v);
+  render();
+ });
+ const rows=S.filter(s=>typeOk(s)&&cities.has(s.c))
+  .sort(sort==="price"?(a,b)=>rank(a)-rank(b)||a.p-b.p||a.n.localeCompare(b.n):(a,b)=>CITIES.indexOf(a.c)-CITIES.indexOf(b.c)||a.p-b.p);
+ document.getElementById("count").textContent=rows.length+" of "+S.length+" places";
+ document.getElementById("grid").innerHTML=rows.length?rows.map(card).join(""):`<p class="empty">Nothing matches. Tap a city to add it back.</p>`;
+ ssRows=rows; renderSS();
+}
+
+let ssRows=[], active=0;
+const $=id=>document.getElementById(id);
+const chars=t=>{let i=0;return t.split(" ").map(w=>`<span style="white-space:nowrap">${[...w].map(c=>{const ch=esc(c);return `<span class="ch" style="--i:${i++}" aria-hidden="true"><i>${ch}</i><i>${ch}</i></span>`}).join("")}</span>`).join(" ");};
+function renderSS(){
+ $("ssList").innerHTML=ssRows.map((s,i)=>`<li><button type="button" class="ss-item" data-i="${i}" aria-label="${esc(s.n)}, ${esc(s.pl)}"><span>${chars(s.n)}</span><span class="ss-p">${esc(s.pl)}</span></button></li>`).join("");
+ $("ssImgs").innerHTML=ssRows.map((s,i)=>{const img=IMG[slug(s.n)]||[];
+  return img.length?`<div class="rot">${img.map((u,k)=>`<img data-src="${u}" alt="${esc(s.n)}"${k?"":` class="show"`}>`).join("")}</div>`:`<div class="ss-none"><span>${esc(s.pl)}</span></div>`}).join("");
+ $("ss").hidden=!ssRows.length;
+ go(0,true);
+}
+function go(i,quiet){
+ const n=ssRows.length; if(!n) return;
+ active=(i+n)%n; const s=ssRows[active];
+ [...$("ssList").children].forEach((li,k)=>li.firstChild.setAttribute("aria-current",k===active));
+ [...$("ssImgs").children].forEach((el,k)=>{
+  el.classList.toggle("on",k===active);
+  if(Math.abs(k-active)<=1) el.querySelectorAll("img[data-src]").forEach(im=>{im.src=im.dataset.src;delete im.dataset.src});
+ });
+ $("ssInfo").className="ss-info"+(s.p===0?" free":"");
+ $("ssInfo").innerHTML=`${stamp(s)}<span class="kd">${esc(s.c)} / ${esc(s.t)}</span><span class="big">${esc(s.pl)}</span><h3>${esc(s.n)}</h3>
+  <span class="pn">${esc(s.pn)}</span><p class="what">${esc(s.what)}</p><p class="catch">${esc(s.catch)}</p>
+  ${s.contact?`<p class="ct">${esc(s.contact)}</p>`:""}
+  <div class="links"><a href="${esc(s.url)}" target="_blank" rel="noopener">Info</a>${s.q?`<a href="${mapUrl(s.q)}" target="_blank" rel="noopener">Map</a>`:""}</div>`;
+ $("ssCt").textContent=(active+1)+" / "+n;
+ if(quiet) return;
+ const list=$("ssList"), b=list.children[active];
+ if(list.scrollWidth>list.clientWidth) list.scrollTo({left:b.offsetLeft-list.clientWidth/2+b.offsetWidth/2,behavior:"smooth"});
+ else list.scrollTo({top:b.offsetTop-list.clientHeight/2+b.offsetHeight/2,behavior:"smooth"});
+}
+const pick=e=>{const b=e.target.closest(".ss-item"); if(b&&+b.dataset.i!==active) go(+b.dataset.i)};
+$("ssList").addEventListener("click",pick);
+if(matchMedia("(hover:hover)").matches) $("ssList").addEventListener("mouseover",pick);
+$("ssPrev").onclick=()=>go(active-1); $("ssNext").onclick=()=>go(active+1);
+$("ss").addEventListener("keydown",e=>{if(e.key==="ArrowRight")go(active+1); if(e.key==="ArrowLeft")go(active-1)});
+let x0=null;
+$("ssImgs").addEventListener("pointerdown",e=>x0=e.clientX);
+$("ssImgs").addEventListener("pointerup",e=>{if(x0===null)return; const dx=e.clientX-x0; x0=null; if(Math.abs(dx)>40) go(active+(dx<0?1:-1))});
+document.getElementById("f-free").textContent=S.filter(s=>s.p===0).length;
+document.getElementById("f-all").textContent=S.length;
+document.getElementById("f-sent").textContent=Object.keys(CONTACTED).length;
+document.getElementById("f-cheap").textContent="$"+Math.min(...S.filter(s=>s.t==="Indoor"&&s.p>0).map(s=>s.p));
+document.getElementById("sort").onchange=e=>{sort=e.target.value;render()};
+
+const np=v=>/not posted|n\/a/i.test(v)?`<span class="np">${esc(v)}</span>`:`<b>${esc(v)}</b>`;
+const DAYS=["Mon","Tue","Wed","Thu","Fri","Sat","Sun"], TM="(\\d{1,2}(?::\\d\\d)?\\s*[ap]\\.m\\.)", DR="(Mon|Tue|Wed|Thu|Fri|Sat|Sun)(?:-(Mon|Tue|Wed|Thu|Fri|Sat|Sun))?";
+function closeMap(str){
+ const m={}, set=(a,b,t)=>{const x=DAYS.indexOf(a),y=b?DAYS.indexOf(b):x;for(let k=x;k<=y;k++) if(!m[DAYS[k]]) m[DAYS[k]]=t.replace(/\s+/g," ");};
+ for(const x of str.matchAll(new RegExp(DR+"\\s+\\d{1,2}(?::\\d\\d)?\\s*[ap]\\.m\\.\\s*-\\s*"+TM,"g"))) set(x[1],x[2],x[3]);
+ for(const x of str.matchAll(new RegExp(TM+"\\s+"+DR,"g"))) set(x[2],x[3],x[1]);
+ return m;
+}
+RATES.forEach(r=>r.close=closeMap(r.closes_weeknight));
+function renderRates(){
+ const day=rateDay;
+ const rows=day?RATES.filter(r=>r.close[day]):RATES;
+ document.getElementById("closeHead").textContent=day?"Closes "+day:"Closes weeknights";
+ document.getElementById("rateCount").textContent=day?`${rows.length} of ${RATES.length} centers post hours for ${day}. The rest don't post them, so call first.`:`${RATES.length} centers`;
+ let lastCity="", zi=0;
+ document.getElementById("ratesBody").innerHTML=rows.length?rows.map(r=>{
+  const head=r.city!==lastCity?`<tr class="cityrow"><td colspan="7">${esc(r.city)}</td></tr>`:""; if(head) zi=0; lastCity=r.city; const zc=(zi++%2)?" class=\"alt\"":"";
+  const src=r.sources.slice(0,2).map((x,i)=>`<a href="${esc(x.url)}" target="_blank" rel="noopener">${i+1}</a><span class="tag">${esc(x.tag.replace(/[\[\]]/g,""))}</span>`).join(" ");
+  const closes=day?`<td class="hit">${esc(r.close[day])}</td>`:`<td>${np(r.closes_weeknight)}</td>`;
+  return head+`<tr${zc}><td><b>${esc(r.center)}</b></td><td>${np(r.day_pass_res)} / ${np(r.day_pass_nonres)}</td><td>${np(r.room_name)}</td><td>${np(r.room_rate_res)} / ${np(r.room_rate_nonres)}</td><td>${np(r.room_min_hours)}</td>${closes}<td>${src}</td></tr>`;
+ }).join(""):`<tr><td colspan="7" class="np">None of these centers post ${day} hours. Weekend hours aren't listed anywhere we checked, so call the front desk.</td></tr>`;
+}
+let rateDay="";
+function renderDayPills(){
+ const el=document.getElementById("dayPills");
+ el.innerHTML=[["","Any"],...DAYS.map(d=>[d,d])].map(([v,l])=>`<button type="button" class="f" aria-pressed="${v===rateDay}" data-v="${v}">${l}</button>`).join("");
+}
+document.getElementById("dayPills").onclick=e=>{const b=e.target.closest("button"); if(!b) return; rateDay=b.dataset.v; renderDayPills(); renderRates();};
+renderDayPills();
+renderRates();
+const HERO=[["Escalante Multi-Generational Center","escalante-multi-generational-center"],["Scottsdale Civic Center","scottsdale-civic-center"],["Soleri Bridge Plaza","soleri-bridge-plaza"],["Pyle Adult Recreation Center","pyle-adult-recreation-center"],["Kiwanis Recreation Center","kiwanis-recreation-center"],["North Tempe Multi-Generational Center","north-tempe-multi-generational-center"]];
+document.getElementById("heroRot").innerHTML=HERO.map(([n,k],i)=>`<img src="${IMG[k][0]}" alt="${esc(n)}" data-name="${esc(n)}"${i?'':' class="show"'}>`).join("");
+document.getElementById("heroCap").textContent=HERO[0][0];
+render();
+if(!matchMedia("(prefers-reduced-motion: reduce)").matches) setInterval(()=>{
+ document.querySelectorAll(".rot").forEach(r=>{const im=r.querySelectorAll("img"); if(im.length<2) return;
+  const k=[...im].findIndex(x=>x.classList.contains("show")); im[k].classList.remove("show"); im[(k+1)%im.length].classList.add("show"); if(r.id==="heroRot"){const nm=im[(k+1)%im.length].dataset.name; setTimeout(()=>{document.getElementById("heroCap").textContent=nm},450);}});
+},3500);
+</script>
+
+<script>
+document.querySelectorAll('.cal').forEach(function(c){
+  var one=new Set((c.dataset.one||'').split(',').filter(Boolean)), n=new Date(), today=new Date(n.getFullYear(),n.getMonth(),n.getDate()), h='';
+  [['November',10],['December',11]].forEach(function(m){
+    var mo=m[1], first=new Date(2026,mo,1).getDay(), days=new Date(2026,mo+1,0).getDate(), g='';
+    'SMTWTFS'.split('').forEach(function(d){g+='<span class="dw">'+d+'</span>';});
+    for(var k=0;k<first;k++) g+='<span></span>';
+    for(var d=1;d<=days;d++){
+      var dt=new Date(2026,mo,d), wd=dt.getDay(), key='2026-'+String(mo+1).padStart(2,'0')+'-'+String(d).padStart(2,'0');
+      var cls=one.has(key)?'o':wd===1?'t':wd===3?'w':wd===5?'fr':'';
+      if(dt<today) cls+=' ps';
+      g+='<span class="'+cls+'">'+d+'</span>';
+    }
+    h+='<div class="mo"><b>'+m[0]+' 2026</b><div class="g">'+g+'</div></div>';
+  });
+  c.innerHTML=h;
+});
+</script>
+</body>
+</html>
